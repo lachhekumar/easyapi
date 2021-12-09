@@ -1,0 +1,9 @@
+
+
+cors: true
+credentials: true
+allowed:
+  - url: "/*"
+    method: "GET,POST"
+    origin:
+      - "*"

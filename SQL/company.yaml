@@ -1,0 +1,14 @@
+guard: true
+  
+table: company
+condition: "status='active'"
+
+insert: "POST"
+update: "PUT"
+delete: "DELETE"
+
+filter:
+  inactive: ""
+  notrequired: ""
+
+displayList: true

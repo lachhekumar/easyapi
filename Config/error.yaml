@@ -1,0 +1,24 @@
+unique:
+  code: VAL001
+  message: Duplicate value found for
+
+set:
+  code: VAL002
+  message: Value is not avaliable in set
+
+
+min:
+  code: VAL003
+  message: Min value  
+
+max:
+  code: VAL004
+  message: Max value
+
+email:
+  code: VAL005
+  message: Please provide valid email address
+
+pattern:
+  code: VAL006
+  message: Please input proper value
