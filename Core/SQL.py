@@ -80,8 +80,19 @@ class SQL:
                         if SQL.tableField[table][filter]['type'] in noSep:
                             sep = ''
 
-                    queryString = text(SQL.processParameter(sqlescape(table)+"."+ sqlescape(filter) + ' ' + 
-                                        sqlescape(fData['type']) +  sep + sqlescape(fData['value']) + sep,input))
+                    if(fData['type'].lower() == 'like'):
+                        queryString = text(SQL.processParameter(sqlescape(table)+"."+ sqlescape(filter) + ' ' + 
+                                            sqlescape(fData['type']) +  sep + '%'+sqlescape(fData['value'])+ '%' + sep,input))
+                    elif(fData['type'].lower() == 'startwith'):
+                        queryString = text(SQL.processParameter(sqlescape(table)+"."+ sqlescape(filter) + ' ' + 
+                                            sqlescape(fData['type']) +  sep + '%'+sqlescape(fData['value']) + sep,input))
+                    elif(fData['type'].lower() == 'endwith'):
+                        queryString = text(SQL.processParameter(sqlescape(table)+"."+ sqlescape(filter) + ' ' + 
+                                            sqlescape(fData['type']) +  sep + sqlescape(fData['value']) +'%' + sep,input))
+                    else:
+                        queryString = text(SQL.processParameter(sqlescape(table)+"."+ sqlescape(filter) + ' ' + 
+                                            sqlescape(fData['type']) +  sep + sqlescape(fData['value']) + sep,input))
+                    print(queryString)
                     sqlQuery = sqlQuery.filter(queryString)
 
             #write  direct sql statement
