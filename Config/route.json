@@ -4,6 +4,7 @@
         {"type":"class","p":"Index.apiIndex"}
     ]},
     {"path":"/clients/<id>","steps":[
+        {"type":"class","p":"Clients.apiList"}
     ],"method":"GET"},
     {"path":"/clients"},
     {"path":"/clients/list"}

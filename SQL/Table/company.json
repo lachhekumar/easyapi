@@ -1,7 +1,7 @@
 {
     "company_id": {"type": "Integer","primary": true},
     "name": {"type": "String", "null":false, "valid": {"min": 2,"max": 50}},
-    "phone": {"type": "String", "null":true, "valid": {"min": 2,"max": 50, "pattern":""}},
+    "phone": {"type": "String", "null":true, "valid": {"min": 2,"max": 50}},
     "email": {"type": "String", "unique":true, "valid": {"email": true}},
     "status": {"type": "String", "default":"active", "set":["active","inactive"]}
 }

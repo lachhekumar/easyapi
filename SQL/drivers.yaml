@@ -6,9 +6,6 @@ methods:
     - PUT
     - DELETE
   
-table: company
-condition: ""
-
 insert: true  
 update: true
 delete: true

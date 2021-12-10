@@ -43,6 +43,10 @@ File: Config/route.json
         - class - Call controller function
 
 
+> Every controller function will get 3 input parameter **input**, **processed** , **formData**
+- **input** - Input given by client, eg: /client/1 in this url user will get {id: 1} in input
+- **processed** - If you are calling multiple step in url, previous function returned option will clubbed and sent in this option
+- **formData** - Got input from form. if json request sent then ['data'] object will be considered
 
 ## Table Declaration
 SQL/Table/<tablename>.json
@@ -120,10 +124,9 @@ URL:
 
 
 ## Packages
-pip install pyyaml
-pip install sqlalchemy
-pip install -U Flask-SQLAlchemy
-pip install  psycopg2
-pip install sqlescapy
-pip install Flask-Session
-pip install -U flask-cors
+pip install pyyaml<br/>
+pip install sqlalchemy<br/>
+pip install -U Flask-SQLAlchemy<br/>
+pip install sqlescapy<br/>
+pip install Flask-Session<br/>
+pip install -U flask-cors<br/>
