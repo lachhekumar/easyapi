@@ -3,5 +3,6 @@
     "name": {"type": "String", "null":false, "valid": {"min": 2,"max": 50}},
     "phone": {"type": "String", "null":true, "valid": {"min": 2,"max": 50}},
     "email": {"type": "String", "unique":true, "valid": {"email": true}},
+    "drivers": {"type": "Relationship","table":"drivers"},
     "status": {"type": "String", "default":"active", "set":["active","inactive"]}
 }
