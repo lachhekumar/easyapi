@@ -12,7 +12,8 @@ class Validation:
                 return Validation.Error['min']       
         else:
             if len(value) < valid['min']:
-                return Validation.Error['min']       
+                return Validation.Error['min']   
+
         return {}
 
     def max(table,field,value, config) -> dict:

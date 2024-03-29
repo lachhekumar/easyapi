@@ -4,11 +4,14 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import types
 from sqlalchemy import text
+from sqlalchemy import Select
 from sqlalchemy import Column, ForeignKey
+from sqlalchemy.orm import relationship
 from sqlalchemy.sql.expression import true
 from sqlescapy import sqlescape
 from flask import request, session
 from Core.Validation import Validation
+import sqlalchemy
 import sys
 import json
 import re
@@ -34,14 +37,16 @@ class SQL:
     #run raw query
     def query(sql: str,input) -> dict:
         rList: List = []
+        print(SQL.processParameter(sql,input))
         try:
-            result = SQL.db.engine.execute(sql)
+            with SQL.db.engine.connect() as conn:
+                result = conn.execute(text(SQL.processParameter(sql,input)))
         except SQLAlchemyError as e:
             errorText = str(e.__dict__['orig'])
             return {'error': 'SQL001','text' : errorText}
 
         for row in result:
-            rList.append(dict(row.items()))        
+            rList.append(dict(row._mapping))
 
         return {"list": rList}
 
@@ -153,25 +158,26 @@ class SQL:
         for field in data:
             errorList: list = []
             info = fieldInfo.get(field)
-            if info.get('unique') == True:
-                r = Validation.unique(table,field,data[field],info,update,other)
-                if r.get('code') is not None:
-                    errorList.append(r)
-
-            if info.get('set') is not None:
-                r = Validation.set(table,field,data[field],info)
-                if r.get('code') is not None:
-                    errorList.append(r)
-
-            if info.get('valid') is not None:
-                for func in info.get('valid'):
-                    r = getattr(Validation,func)(table,field,data[field],info)
+            if info.get('type') != 'Relationship':
+                if info.get('unique') == True:
+                    r = Validation.unique(table,field,data[field],info,update,other)
                     if r.get('code') is not None:
                         errorList.append(r)
 
+                if info.get('set') is not None:
+                    r = Validation.set(table,field,data[field],info)
+                    if r.get('code') is not None:
+                        errorList.append(r)
 
-            if len(errorList) > 0:
-                returnData[field] = errorList
+                if info.get('valid') is not None:
+                    for func in info.get('valid'):
+                        r = getattr(Validation,func)(table,field,data[field],info)
+                        if r.get('code') is not None:
+                            errorList.append(r)
+
+
+                if len(errorList) > 0:
+                    returnData[field] = errorList
 
 
         return returnData
@@ -191,6 +197,7 @@ class SQL:
                 if data.get(field) is None:
                    if finfo.get('null') is not None and  finfo.get('null') == False:
                        data[field] = '' if finfo.get('default') is None else finfo.get('default')
+
 
         validate: dict= SQL.fieldValidation(table,data,SQL.tableField[table])
         if len(validate) > 0:
@@ -290,9 +297,10 @@ class SQL:
             else:
                 starterObject = input[data[1]]
 
-            for ad in data[2:]:
-                if ad in dir(starterObject):
+            for ad in data[1:]:
+                if isinstance(starterObject.keys(),type({}.keys())) and  ad in starterObject.keys():
                     starterObject = starterObject[ad]
+
 
             if isinstance(starterObject, str):
                 condition = condition.replace( idata,starterObject)
@@ -315,6 +323,9 @@ class SQL:
         returnData: dict = {}
         for field in SQL.tableField[table]:
             returnData[field] = getattr(record,field)
+            if(type(returnData[field]) is sqlalchemy.orm.collections.InstrumentedList):
+                returnData[field] = [SQL.serialize(SQL.tableField[table][field]['table'],record) for record in returnData[field]]
+            
         return returnData
 
     # makeClass
@@ -325,26 +336,36 @@ class SQL:
         for fields in tableData:
             fieldData: str = tableData[fields]
             extra: dict = {}
-            if (fieldData.get('primary') is not None) and fieldData.get('primary') == True:
-                extra['primary_key'] = True
 
-            if (fieldData.get('unique') is not None) and fieldData.get('unique') == True:
-                extra['unique'] = True
-
-            if (fieldData.get('null') is not None) and fieldData.get('null') == True:
-                extra['nullable'] = True
-
-            if (fieldData.get('default') is not None):
-                extra['default'] = fieldData.get('default')
-
-            if fieldData['type'] == 'String':
-                length = 50
-                if (fieldData.get('len') is not None) and fieldData.get('len') > 0: 
-                    length = fieldData.get('len')
-
-                attr_dict[fields] = Column(fields,getattr(types,fieldData['type'])(length),**extra)
+            if fieldData['type'] == 'Relationship':
+                attr_dict[fields] = relationship(fieldData['table'])
             else:
-                attr_dict[fields] = Column(fields,getattr(types,fieldData['type']),**extra)
+                if (fieldData.get('primary') is not None) and fieldData.get('primary') == True:
+                    extra['primary_key'] = True
+
+                if (fieldData.get('unique') is not None) and fieldData.get('unique') == True:
+                    extra['unique'] = True
+
+                if (fieldData.get('null') is not None) and fieldData.get('null') == True:
+                    extra['nullable'] = True
+
+                if (fieldData.get('default') is not None):
+                    extra['default'] = fieldData.get('default')
+
+                if fieldData['type'] == 'String':
+                    length = 50
+                    if (fieldData.get('len') is not None) and fieldData.get('len') > 0: 
+                        length = fieldData.get('len')
+
+                    if fieldData.get('foreign') is not None:
+                        attr_dict[fields] = Column(fields,getattr(types,fieldData['type'])(length),ForeignKey(fieldData.get('foreign')),**extra)
+                    else:
+                        attr_dict[fields] = Column(fields,getattr(types,fieldData['type'])(length),**extra)
+                else:
+                    if fieldData.get('foreign') is not None:
+                        attr_dict[fields] = Column(fields,getattr(types,fieldData['type']),ForeignKey(fieldData.get('foreign')),**extra)
+                    else:
+                        attr_dict[fields] = Column(fields,getattr(types,fieldData['type']),**extra)
     
         SQL.dynamicClass[table] = type(table,(SQL.db.Model,),attr_dict)
         SQL.tableField[table] = tableData

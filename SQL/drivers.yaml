@@ -1,5 +1,5 @@
-sql: "select * from	drivers limit 0,10"
 guard: true
+table: drivers
 methods:
     - GET
     - POST

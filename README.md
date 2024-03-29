@@ -55,7 +55,7 @@ SQL/Table/<tablename>.json
     "company_id": {"type": "Integer","primary": true},
     "name": {"type": "String", "null":false, "valid": {"min": 2,"max": 50}},
     "phone": {"type": "String", "null":true, "valid": {"min": 2,"max": 50, "pattern":""}},
-    "email": {"type": "String", "unique":true, "valid": {"email": true}},
+    "email": {"type": "String", "unique":true, "valid": {"email": true},"foreign":"drivers.drivers_id"},
     "status": {"type": "String", "default":"active", "set":["active","inactive"]}
 }
 ```
@@ -69,7 +69,9 @@ SQL/Table/<tablename>.json
     - Boolean
     - PickleType
     - LargeBinary
+    - Relationship ( Bind relationship)
 
+> Note: if type is "Relationship", then "table" options should be added with the Table name.
 
 Query Defination
 SQL/<queryname>.yaml this can be accessed using /_view/<queryname>
