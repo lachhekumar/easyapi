@@ -1,5 +1,6 @@
 from flask import jsonify
 from flask import request
+from flask import Response
 from Core.Config import Config
 from sqlalchemy.exc import SQLAlchemyError
 from Core.Config import Config
@@ -28,14 +29,21 @@ class Controller:
             return jsonify({'error': 'SYS001','text' : 'Method not allowed'})        
 
         if request.method != 'GET':
-            formData = request.form.to_dict()    
+            formData = request.form.to_dict()   
+            content_type = request.headers.get('Content-Type') 
+            sendData['formData']:dict = {}
             if request.data != '' and len(request.data) > 0:
                 try:         
                     d = json.loads(request.data)
-                    formData.update(d['data'])
+                    if 'data' in d.keys():
+                        formData.update(d['data'])
+
                 except ValueError:
                     return  jsonify({'error': 'SYS002','text' : 'Json input is not correct'})
             sendData['formData'] = formData
+
+            if isinstance(request.json, (dict,list)):
+                sendData['formData'].update(request.json)
 
         if _info.get('guard') == True:
             if protectRequest(_info) == False:
@@ -76,6 +84,9 @@ class Controller:
               
             
             #merge got information from function
+            if isinstance(returnData, Response):
+                return returnData
+            
             if returnData is not None:
                 gotData.update(returnData)
                 sendData['processed'] = gotData
@@ -114,6 +125,15 @@ class Controller:
 
         return apiController
 
+    def getTableConfig(table :str) -> dict:
+        directory = os.getcwd() + '/SQL/'
+        with open(directory + table +'.yaml', "r") as stream:
+            try:
+                fcontent = yaml.safe_load(stream)
+            except yaml.YAMLError as exc:
+                print(exc)           
+        return fcontent 
+
 
     # --------------------------- processSQL ---------------------------- #
     # process SQL Data
@@ -145,7 +165,9 @@ class Controller:
             if request.data != '' and len(request.data) > 0:
                 try:         
                     d = json.loads(request.data)
-                    formData.update(d['data'])
+                    if 'data' in d.keys():
+                        formData.update(d['data'])
+
                 except ValueError:
                     error = True
                     output = {'error': 'SYS002','text' : 'Json input is not correct'}
@@ -191,7 +213,7 @@ class Controller:
                 sql = fcontent.get('sql')
                 output= SQL.query(sql,kwargs)
 
-            if (fcontent.get('table') is not None) and fcontent.get('table').lower() != '':
+            elif (fcontent.get('table') is not None) and fcontent.get('table').lower() != '':
                 output = SQL.queryTable(fcontent.get('table'),fcontent,kwargs)
 
             if (fcontent.get('single') is not None) and fcontent.get('single').lower() == 'yes':

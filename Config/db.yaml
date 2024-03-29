@@ -1,7 +1,7 @@
 default:
   type: mysql
   database: bandalocal
-  host: "radiance"
+  host: "radiance.in"
   port: "3306"
   username: kumar
   password: temp

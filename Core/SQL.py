@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import types
 from sqlalchemy import text
+from sqlalchemy import Select
 from sqlalchemy import Column, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql.expression import true
@@ -36,14 +37,16 @@ class SQL:
     #run raw query
     def query(sql: str,input) -> dict:
         rList: List = []
+        print(SQL.processParameter(sql,input))
         try:
-            result = SQL.db.engine.execute(sql)
+            with SQL.db.engine.connect() as conn:
+                result = conn.execute(text(SQL.processParameter(sql,input)))
         except SQLAlchemyError as e:
             errorText = str(e.__dict__['orig'])
             return {'error': 'SQL001','text' : errorText}
 
         for row in result:
-            rList.append(dict(row.items()))        
+            rList.append(dict(row._mapping))
 
         return {"list": rList}
 
@@ -195,6 +198,7 @@ class SQL:
                    if finfo.get('null') is not None and  finfo.get('null') == False:
                        data[field] = '' if finfo.get('default') is None else finfo.get('default')
 
+
         validate: dict= SQL.fieldValidation(table,data,SQL.tableField[table])
         if len(validate) > 0:
             return validate
@@ -293,9 +297,10 @@ class SQL:
             else:
                 starterObject = input[data[1]]
 
-            for ad in data[2:]:
-                if ad in dir(starterObject):
+            for ad in data[1:]:
+                if isinstance(starterObject.keys(),type({}.keys())) and  ad in starterObject.keys():
                     starterObject = starterObject[ad]
+
 
             if isinstance(starterObject, str):
                 condition = condition.replace( idata,starterObject)
