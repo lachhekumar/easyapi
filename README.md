@@ -115,6 +115,23 @@ condition - will be applied for all query which is execute for given view
 - session. get from session value
 
 
+**Controller/Middleware.py**  can hold the function which can be called pre & post execution of the SQL / Table page.
+Function name should be formatted in the following style pre<request.method><Table|SQL>(input: dict) and post<request.method><Table|SQL>(input: dict)
+**example:**
+- preGetCompany
+- prePostCompany
+
+```python
+    def preGetCompany(input: dict):
+        return True, input  
+```
+
+function should return 2 value 
+- 1. true|false  success status 
+- 2. on success of pre function  it should return "input" assign it can be with modification
+- 3. on success of post function  it should return object
+- 4. on error of pre / post function  should return error object
+
 URL:
 -----------
 - **Pagigantion**: _view/<url>?record=20&page=0   

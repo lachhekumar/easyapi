@@ -80,6 +80,8 @@ for sql in sqlData:
     app.add_url_rule('/_view/' + sql +'/<id>/<action>',methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)
 
 
+#upload default function
+app.add_url_rule('/_upload/',methods = ['POST'],view_func=Controller.uploadFile,defaults = parameter)    
 
 # @app.before_request
 # def loadOnEveryRequest():
@@ -90,6 +92,5 @@ def page_not_found(error):
     return 'This page does not exist', 404
 
 
-
 # Run application from in realoader mode
-app.run(use_reloader=True)
+app.run(passthrough_errors=True,use_reloader=True)

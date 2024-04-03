@@ -3,6 +3,7 @@ from flask import request
 from flask import Response
 from Core.Config import Config
 from sqlalchemy.exc import SQLAlchemyError
+from werkzeug.utils import secure_filename
 from Core.Config import Config
 from Core.SQL import SQL
 from guard import protectRequest
@@ -11,8 +12,18 @@ import os
 import yaml
 import sqlalchemy
 import json
+import uuid
 
 class Controller:
+
+    def uploadFile(**kwargs) -> dict:
+        if 'file' not in request.files:
+            return {}
+            
+        filename = str(uuid.uuid4()) + '-'+ secure_filename(request.files['file'].filename)
+        request.files['file'].save(os.path.join('Upload', filename))        
+
+        return {"filename": filename}    
 
     # --------------------------- Process URL ---------------------------- #
     # process url given data
@@ -160,8 +171,26 @@ class Controller:
                 return jsonify({'error': 'SYS005','Text': 'User is not authroized to access this page'})
 
 
+        _controller = None
+        _functionList = {'pre': None,'post': None}
+        controllerFile: str = os.getcwd() + '/Controller/Middleware.py'
+        if os.path.isfile(controllerFile):
+            _controller = __import__('Controller.Middleware',globals(), locals(),fromlist=['Middleware'])
+            cclass= getattr(_controller,'Middleware')
+            funcList = dir(cclass)
+
+            if 'pre' + request.method.capitalize() + _info.capitalize() in funcList:
+                _functionList['pre'] = True
+
+            if 'post' + request.method.capitalize() + _info.capitalize() in funcList:
+                _functionList['post'] = True
+
+
+
+
         if request.method != 'GET':
             formData = request.form.to_dict()    
+
             if request.data != '' and len(request.data) > 0:
                 try:         
                     d = json.loads(request.data)
@@ -172,6 +201,14 @@ class Controller:
                     error = True
                     output = {'error': 'SYS002','text' : 'Json input is not correct'}
 
+        if _functionList['pre'] == True:
+            cclass= getattr(_controller,'Middleware')
+            status, returnData = getattr(cclass,'pre' + request.method.capitalize() + _info.capitalize())(formData)
+            if status == False:
+                return returnData
+            
+            if returnData is not None:
+                formData = returnData
 
 
         if kwargs.get('id') is not None:
@@ -187,7 +224,7 @@ class Controller:
 
 
 
-        if kwargs.get('action') is not None and kwargs.get('action').lower() == 'update':
+        elif kwargs.get('action') is not None and kwargs.get('action').lower() == 'update':
             allowed = fcontent['update'].split(',')
             if request.method not in allowed:
                 error = True
@@ -197,7 +234,7 @@ class Controller:
                     action = True
                     output = SQL.update(fcontent.get('table'),formData,fcontent,kwargs)
 
-        if kwargs.get('action') is not None and kwargs.get('action').lower() == 'delete':
+        elif kwargs.get('action') is not None and kwargs.get('action').lower() == 'delete':
             allowed = fcontent['delete'].split(',')
             if request.method not in allowed:
                 error = True
@@ -223,5 +260,15 @@ class Controller:
                     output['record']= record
                 else:
                     output = {'error': 'REC001','text' : 'No record found'}
+
+        #post data information 
+        if _functionList['post'] == True:
+            cclass= getattr(_controller,'Middleware')
+            status, returnData = getattr(cclass,'post' + request.method.capitalize() + _info.capitalize())(output)
+            if status == False:
+                return returnData
+            
+            if returnData is not None:
+                output = returnData
 
         return jsonify(output)
