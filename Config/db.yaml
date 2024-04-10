@@ -4,6 +4,6 @@ default:
   host: "radiance.in"
   port: "3306"
   username: kumar
-  password: temp
+  password: temp1925
   charset: utf8
   timezone: +05:30
