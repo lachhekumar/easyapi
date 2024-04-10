@@ -27,7 +27,9 @@ File: Config/route.json
     ],"method":"GET", "gaurd": true, "validate":"input.json"}
 ```
 
+
 > All class will be referred from controller folder eg: Index.getIndex in this example Index is a class and getIndex is a function
+> function can return {'formData' : {}} this will replace the existing formData 
 
 - **gaurd** set to true will login/session validator to validate request.
 - **validate** - Request by Querystring/Post as per the validation configured

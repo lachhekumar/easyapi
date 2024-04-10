@@ -89,25 +89,25 @@ class Controller:
             
             elif steps['type'] == 'sql':
                 kwargs['log'].info('SQL step called')
-                returnData = SQL.query(steps['p'],kwargs)                
+                returnData = SQL.query(steps['p'],sendData['formData'])                
                 
             elif steps['type'] == 'select':
                 kwargs['log'].info('Select step called')
                 directory = os.getcwd() + '/SQL/'
                 fcontent = config.getYAML(directory + steps['p'] +'.yaml')
-                returnData = SQL.queryTable(fcontent.get('table'),fcontent,kwargs) 
+                returnData = SQL.queryTable(fcontent.get('table'),fcontent,sendData['formData']) 
 
             elif steps['type'] == 'insert':
                 kwargs['log'].info('Insert step called')
                 directory = os.getcwd() + '/SQL/'
                 fcontent = config.getYAML(directory + steps['p'] +'.yaml')
-                returnData = SQL.queryTable(fcontent.get('table'),fcontent,kwargs)     
+                returnData = SQL.queryTable(fcontent.get('table'),fcontent,sendData['formData'])     
 
             elif steps['type'] == 'update':
                 kwargs['log'].info('Update step called')
                 directory = os.getcwd() + '/SQL/'
                 fcontent = config.getYAML(directory + steps['p'] +'.yaml')
-                returnData = SQL.queryTable(fcontent.get('table'),fcontent,kwargs)                 
+                returnData = SQL.queryTable(fcontent.get('table'),fcontent,sendData['formData'])                 
               
             
             #merge got information from function
@@ -117,6 +117,9 @@ class Controller:
             if returnData is not None:
                 gotData.update(returnData)
                 sendData['processed'] = gotData
+
+                if gotData['formData'] is not None:
+                    sendData['formData'] = gotData['formData']
 
         sendToBrowser: str = jsonify(gotData)
         return sendToBrowser
