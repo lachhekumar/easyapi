@@ -8,7 +8,7 @@ from flask_session import Session
 from flask_cors import CORS
 from Core.Validation import Validation
 import os
-import logging
+import base64, random, datetime, logging, hashlib
 from flask import request
 
 
@@ -99,6 +99,12 @@ for sql in sqlData:
 parameter: dict = {'log': logger}
 app.add_url_rule('/_upload/',methods = ['POST'],view_func=Controller.uploadFile,defaults = parameter)    
 
+
+
+#upload default function
+parameter: dict = {'log': logger}
+app.add_url_rule('/_status/',methods = ['GET'],view_func=Controller.status,defaults = parameter)    
+
 # @app.before_request
 # def loadOnEveryRequest():
 #     print("Impelementation Required")
@@ -111,7 +117,37 @@ def page_not_found(error):
 
 @app.before_request
 def before_request():
+
     logger.info('Request started for url ' + request.url)
+    
+
+    if(str(request.content_type) == 'application/json' and request.path != '/_status/' and request.path != '/_status' and request.path != '/_replace/'):
+        headers = dict(request.headers)
+        logger.info('Application JSON request')
+        if 'Access-Token' in headers and headers['Access-Token'] is not None:
+            token = str(headers['Access-Token']).split('/')
+
+            #token bsics
+            currentDate: str = datetime.datetime.now().strftime('%Y%m%d')
+            code: str = hashlib.md5((request.remote_addr +'/' + request.user_agent.string+ '/' + currentDate).encode('utf-8')).hexdigest()
+            encodeToken:str = base64.b64decode(token[1]).decode("utf-8").split('/')
+            if(encodeToken[0] != code):
+                logger.info('Token Did not Match')
+                return {'error': {'message': 'Invalid token, you can get access_totken by calling /_status api'}}
+            
+            uuid: str = encodeToken[1]
+            setattr(request, 'uuid', uuid)
+            
+            
+        else:
+            logger.info('Token Did not Match')
+            return {'error': {'message': 'Invalid token'}}
+
+
+
+        
+
+
 
 
 # Run application from in realoader mode

@@ -31,6 +31,8 @@ File: Config/route.json
 > All class will be referred from controller folder eg: Index.getIndex in this example Index is a class and getIndex is a function
 > function can return {'formData' : {}} this will replace the existing formData 
 
+> self.log.info('<your message>') You can create your own log 
+
 - **gaurd** set to true will login/session validator to validate request.
 - **validate** - Request by Querystring/Post as per the validation configured
 - **method** - Allowed method it can be POST, GET, PUT, DELETE
@@ -142,6 +144,13 @@ URL:
 - _view/company/add -> add new records to system, application should pass info in {data: {}}
 - _view/company/1/update -> update records to system, application should pass info in {data: {}}
 - _view/company/1/delete -> delete records from
+
+## Access Token
+Service will need access token you can get access token form /_status/ call.  Pass access_token which is recieved in header
+{
+  'access-token': ***access-token***
+}
+Access token carry a uuid for every section you can get the same from ***request.uuid***
 
 
 ## Packages

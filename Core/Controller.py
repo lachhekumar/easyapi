@@ -13,9 +13,30 @@ import yaml
 import sqlalchemy
 import json
 import uuid
+import hashlib
+import datetime
+import base64, random
 
 class Controller:
+    def status(**kwargs) -> dict:
+        
+        currentDate: str = datetime.datetime.now().strftime('%Y%m%d')
+        code: str = hashlib.md5((request.remote_addr +'/' + request.user_agent.string+ '/' + currentDate).encode('utf-8')).hexdigest() + '/' + str(uuid.uuid4())
+        token:str = base64.b64encode(code.encode()).decode('utf-8')
 
+        data: dict = {
+            'remote_addr': request.remote_addr,
+            'url':  request.path,
+            'host': request.host,
+            'user-agent': request.user_agent.string,
+            'headers': dict(request.headers),
+            'access_token': request.remote_addr.replace('.','') + datetime.datetime.now().strftime('%d%y%m') + '/' + token + '/' + str(random.random())
+        }
+
+            
+        return data
+
+    
     def uploadFile(**kwargs) -> dict:
         if 'file' not in request.files:
             kwargs['log'].error('File - parameter is not avaliable in the request')
@@ -49,7 +70,9 @@ class Controller:
             formData = request.form.to_dict()   
             content_type = request.headers.get('Content-Type') 
             sendData['formData']:dict = {}
-            if request.data != '' and len(request.data) > 0:
+            if request.form != '' and len(request.form) > 0:
+                sendData['formData'] = request.form.to_dict()
+            elif request.data != '' and len(request.data) > 0:
                 try:         
                     d = json.loads(request.data)
                     if 'data' in d.keys():
@@ -85,6 +108,7 @@ class Controller:
                 dclass = __import__('Controller.'+ components[0],globals(), locals(),fromlist=[components[0]])
                 cclass= getattr(dclass,components[0])
                 kwargs['log'].info('Called function ' + components[1] + ' from class ' + components[0])
+                cclass.log = kwargs['log']
                 returnData = getattr(cclass,components[1])(**sendData)
             
             elif steps['type'] == 'sql':
@@ -118,7 +142,7 @@ class Controller:
                 gotData.update(returnData)
                 sendData['processed'] = gotData
 
-                if gotData['formData'] is not None:
+                if 'formData' in gotData and gotData['formData'] is not None:
                     sendData['formData'] = gotData['formData']
 
         sendToBrowser: str = jsonify(gotData)
