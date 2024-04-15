@@ -2,7 +2,7 @@
     {"path":"/","steps":[
         {"type":"class","p":"Index.getIndex"},
         {"type":"class","p":"Index.apiIndex"}
-    ]},
+    ],"method":"POST"},
     {"path":"/clients/<id>","steps":[
         {"type":"class","p":"Clients.apiList"}
     ],"method":"GET"},

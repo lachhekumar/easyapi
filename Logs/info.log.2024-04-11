@@ -1,0 +1,699 @@
+2024-04-11 17:14:52,787 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:14:52,787 - app - ERROR - Exception on /_status/ [GET]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 33, in status
+    'token': datetime.datetime.now().strftime('%d%y%') + '/' + token.replace("b'",'').replace("'",'') + '/' + str(random.random())
+ValueError: Invalid format string
+2024-04-11 17:14:52,787 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:14:52] "[35m[1mGET /_status/ HTTP/1.1[0m" 500 -
+2024-04-11 17:14:53,118 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:14:53,118 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:14:53,118 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:14:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:15:04,844 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:04,844 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:04,851 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:05,474 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:15:07,239 - __main__ - INFO - Application started
+2024-04-11 17:15:08,018 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:15:08,023 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:15:08] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:15:08,214 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:15:08,214 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:15:08,222 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:15:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:15:40,982 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:40,982 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:40,982 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:41,942 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:15:43,411 - __main__ - INFO - Application started
+2024-04-11 17:15:43,579 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:15:43,581 - app - ERROR - Exception on /_status/ [GET]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 33, in status
+    'token': request.remote_addr.replac('.','') + datetime.datetime.now().strftime('%d%y%m') + '/' + token.replace("b'",'').replace("'",'') + '/' + str(random.random())
+AttributeError: 'str' object has no attribute 'replac'
+2024-04-11 17:15:43,590 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:15:43] "[35m[1mGET /_status/ HTTP/1.1[0m" 500 -
+2024-04-11 17:15:43,801 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:15:43,801 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:15:43,801 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:15:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:15:54,772 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:54,775 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:54,779 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:15:55,946 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:15:57,410 - __main__ - INFO - Application started
+2024-04-11 17:15:57,567 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:15:57,567 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:15:57] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:15:57,794 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:15:57,797 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:15:57,797 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:15:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:16:23,758 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:16:23,967 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:16:23,968 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:16:24,951 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:16:26,176 - __main__ - INFO - Application started
+2024-04-11 17:16:45,277 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:16:45,285 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:16:45] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:24:10,532 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:24:10,534 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:24:10] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:24:33,395 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:24:33,395 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:24:33] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:25:18,723 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:25:18,731 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:25:18] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:25:39,924 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:25:39,926 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:25:39] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:25:59,333 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:25:59,333 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:25:59] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:40:30,671 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:30,671 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:30,671 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:31,534 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:40:33,168 - __main__ - INFO - Application started
+2024-04-11 17:40:39,869 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:39,869 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:40,310 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:40,663 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:40:41,999 - __main__ - INFO - Application started
+2024-04-11 17:40:45,323 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:40:45,323 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:40:45] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:40:48,192 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:48,200 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:48,200 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:40:48,469 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:40:49,800 - __main__ - INFO - Application started
+2024-04-11 17:41:07,756 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Validation.py', reloading
+2024-04-11 17:41:08,440 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:41:09,914 - __main__ - INFO - Application started
+2024-04-11 17:41:22,366 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:41:22,366 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:41:22,366 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:41:23,580 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:41:25,151 - __main__ - INFO - Application started
+2024-04-11 17:41:26,720 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:41:26,724 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:41:26,725 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:41:26,725 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:41:27,898 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:41:29,156 - __main__ - INFO - Application started
+2024-04-11 17:41:29,439 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:41:29,448 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:41:29] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:41:29,670 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:41:29,670 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:41:29,670 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:41:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:41:56,032 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:41:56,032 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:41:56] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:42:35,473 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:42:35,478 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:42:35,478 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:42:36,124 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:42:37,657 - __main__ - INFO - Application started
+2024-04-11 17:42:42,558 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:42:42,558 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:42:42] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:42:42,794 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:42:42,809 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:42:42,809 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:42:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:46:22,468 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:46:22,472 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:46:22,473 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:46:23,344 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:46:24,662 - __main__ - INFO - Application started
+2024-04-11 17:46:26,304 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:46:26,308 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:46:26] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:46:26,512 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:46:26,515 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:46:26,517 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:46:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:46:36,529 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:46:36,531 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:46:36] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:46:56,978 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:46:56,979 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:46:56] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:46:57,297 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:46:57,299 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:46:57,301 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:46:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:47:47,881 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:47:47,882 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:47:47,885 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:47:47,886 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:47:49,019 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:47:50,239 - __main__ - INFO - Application started
+2024-04-11 17:48:01,025 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:01,027 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:01,028 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:01,030 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:01,761 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:48:02,982 - __main__ - INFO - Application started
+2024-04-11 17:48:21,309 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:21,312 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:21,314 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:21,770 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:48:22,995 - __main__ - INFO - Application started
+2024-04-11 17:48:28,450 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:28,458 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:28,459 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:28,461 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:29,473 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:48:31,055 - __main__ - INFO - Application started
+2024-04-11 17:48:37,702 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:48:37,705 - __main__ - INFO - Application JSON request
+2024-04-11 17:48:37,708 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:48:37] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:48:45,705 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:48:45,705 - __main__ - INFO - Application JSON request
+2024-04-11 17:48:45,708 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:48:45] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:48:59,986 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:59,988 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:48:59,989 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:49:00,801 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:49:02,069 - __main__ - INFO - Application started
+2024-04-11 17:49:06,471 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:49:06,473 - __main__ - INFO - Application JSON request
+2024-04-11 17:49:06,476 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:49:06] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:49:26,857 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:49:26,858 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:49:26,862 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:49:27,786 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:49:29,049 - __main__ - INFO - Application started
+2024-04-11 17:49:38,071 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:49:38,073 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:49:38,077 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:49:38,829 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:49:40,478 - __main__ - INFO - Application started
+2024-04-11 17:49:43,639 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:49:43,641 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:49:43,643 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:49:43,948 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:49:45,309 - __main__ - INFO - Application started
+2024-04-11 17:49:46,922 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:49:46,927 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:49:46] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:49:47,148 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:49:47,149 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:49:47,151 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:49:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:49:49,486 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:49:49,489 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:49:49] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:51:10,497 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:51:10,499 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:51:10,500 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 17:51:11,436 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:51:12,861 - __main__ - INFO - Application started
+2024-04-11 17:51:14,188 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:51:14,191 - __main__ - INFO - Application JSON request
+2024-04-11 17:51:14,193 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:51:14] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:51:19,266 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:51:19,267 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:51:19] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:51:19,460 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 17:51:19,461 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 17:51:19,463 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:51:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 17:54:11,768 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:54:11,770 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:54:11] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:54:18,548 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 17:54:18,548 - __main__ - INFO - Application JSON request
+2024-04-11 17:54:18,550 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:54:18] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-11 17:54:18,564 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 17:54:18,566 - __main__ - INFO - Application JSON request
+2024-04-11 17:54:18,567 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:54:18] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 17:54:54,793 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:54:54,797 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:54:54,798 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:54:55,733 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:54:56,897 - __main__ - INFO - Application started
+2024-04-11 17:55:05,905 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:05,906 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:05,908 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:05,910 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:06,506 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:55:07,869 - __main__ - INFO - Application started
+2024-04-11 17:55:21,974 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 17:55:21,975 - __main__ - INFO - SQL Process started
+2024-04-11 17:55:22,100 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 17:55:29,722 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:55:29] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 17:55:42,547 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 17:55:42,548 - __main__ - INFO - SQL Process started
+2024-04-11 17:55:42,553 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 17:55:45,700 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:55:45] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 17:55:57,178 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,181 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,182 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,182 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,401 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,402 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,404 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,405 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 17:55:57,831 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:55:59,037 - __main__ - INFO - Application started
+2024-04-11 17:56:10,262 - __main__ - INFO - Application started
+2024-04-11 17:56:10,364 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-11 17:56:10,365 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-11 17:56:10,380 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 17:56:11,573 - __main__ - INFO - Application started
+2024-04-11 17:56:13,794 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 17:56:13,796 - __main__ - INFO - SQL Process started
+2024-04-11 17:56:13,808 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 17:56:17,015 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:56:17] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 17:56:42,497 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 17:56:42,501 - __main__ - INFO - Application JSON request
+2024-04-11 17:56:42,505 - __main__ - INFO - SQL Process started
+2024-04-11 17:56:42,509 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 17:56:44,824 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 17:56:44] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:00:28,928 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:00:28,930 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:00:28,934 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:00:29,758 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:00:31,108 - __main__ - INFO - Application started
+2024-04-11 18:00:51,699 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:00:51,701 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:00:51,701 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:00:51,702 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:00:52,612 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:00:53,262 - __main__ - INFO - Application started
+2024-04-11 18:02:09,701 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:02:09,701 - __main__ - INFO - Application JSON request
+2024-04-11 18:02:09,702 - __main__ - INFO - SQL Process started
+2024-04-11 18:02:09,705 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:02:10,793 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:02:10] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:03:12,802 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:03:12,805 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:03:12,806 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:03:12,806 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:03:13,935 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:03:14,609 - __main__ - INFO - Application started
+2024-04-11 18:03:17,571 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:03:17,572 - __main__ - INFO - Application JSON request
+2024-04-11 18:03:17,573 - __main__ - INFO - SQL Process started
+2024-04-11 18:03:17,581 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:03:18,463 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:03:18] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:04:43,044 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:04:43,047 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:04:43,048 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:04:43,049 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:04:43,732 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:04:44,403 - __main__ - INFO - Application started
+2024-04-11 18:04:53,022 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:04:53,040 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:04:53,041 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:04:53,679 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:04:54,406 - __main__ - INFO - Application started
+2024-04-11 18:05:08,803 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:08,805 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:08,805 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:08,806 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:09,753 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:05:10,463 - __main__ - INFO - Application started
+2024-04-11 18:05:16,724 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:16,726 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:16,727 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:16,728 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:17,735 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:05:18,445 - __main__ - INFO - Application started
+2024-04-11 18:05:19,650 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:05:19,652 - __main__ - INFO - Application JSON request
+2024-04-11 18:05:19,652 - __main__ - INFO - SQL Process started
+2024-04-11 18:05:19,656 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:05:20,653 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:05:20] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:05:59,331 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:59,334 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:59,334 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:05:59,335 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:00,235 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:06:01,002 - __main__ - INFO - Application started
+2024-04-11 18:06:14,268 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:14,270 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:14,271 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:14,271 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:15,332 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:06:16,078 - __main__ - INFO - Application started
+2024-04-11 18:06:19,213 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:19,263 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:19,265 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:06:20,427 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:06:21,160 - __main__ - INFO - Application started
+2024-04-11 18:06:23,462 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:06:23,463 - __main__ - INFO - Application JSON request
+2024-04-11 18:06:23,473 - __main__ - INFO - SQL Process started
+2024-04-11 18:06:23,478 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:06:24,818 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:06:24] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:07:10,277 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:10,279 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:10,280 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:10,280 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:10,944 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:07:11,645 - __main__ - INFO - Application started
+2024-04-11 18:07:18,410 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:18,412 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:18,413 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:18,413 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:07:19,308 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:07:19,959 - __main__ - INFO - Application started
+2024-04-11 18:07:24,440 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:07:24,441 - __main__ - INFO - Application JSON request
+2024-04-11 18:07:24,442 - __main__ - INFO - SQL Process started
+2024-04-11 18:07:24,447 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:07:25,374 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:07:25] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:08:00,236 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:08:00,239 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:08:00,239 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:08:00,240 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:08:00,587 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:08:01,306 - __main__ - INFO - Application started
+2024-04-11 18:08:03,449 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:08:03,450 - __main__ - INFO - Application JSON request
+2024-04-11 18:08:03,452 - __main__ - INFO - SQL Process started
+2024-04-11 18:08:04,488 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:08:05,503 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:08:05] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:08:19,836 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:08:19,837 - __main__ - INFO - Application JSON request
+2024-04-11 18:08:19,840 - __main__ - INFO - SQL Process started
+2024-04-11 18:08:19,847 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:08:21,025 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:08:21] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:08:29,694 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:08:29,695 - __main__ - INFO - Application JSON request
+2024-04-11 18:08:29,696 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:08:29] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-11 18:08:29,706 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:08:29,709 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:08:29] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:08:44,141 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:08:44,143 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:08:44,144 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:08:45,037 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:08:45,791 - __main__ - INFO - Application started
+2024-04-11 18:09:21,781 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:21,781 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:21,784 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:22,378 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:09:23,071 - __main__ - INFO - Application started
+2024-04-11 18:09:25,610 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:09:25,610 - __main__ - INFO - Application JSON request
+2024-04-11 18:09:25,614 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:25] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-11 18:09:25,622 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:09:25,623 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:25] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:09:27,649 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:09:27,649 - __main__ - INFO - Application JSON request
+2024-04-11 18:09:27,651 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:27] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-11 18:09:27,658 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:09:27,663 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:27] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:09:28,998 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:09:28,999 - __main__ - INFO - Application JSON request
+2024-04-11 18:09:29,000 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:29] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-11 18:09:29,005 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:09:29,007 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:29] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:09:30,211 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:09:30,211 - __main__ - INFO - Application JSON request
+2024-04-11 18:09:30,212 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:30] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-11 18:09:30,217 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:09:30,220 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:30] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:09:39,747 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:09:39,748 - __main__ - INFO - Application JSON request
+2024-04-11 18:09:39,752 - __main__ - INFO - SQL Process started
+2024-04-11 18:09:39,757 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:09:40,682 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:40] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:09:49,079 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:09:49,080 - __main__ - INFO - Application JSON request
+2024-04-11 18:09:49,081 - __main__ - INFO - SQL Process started
+2024-04-11 18:09:49,083 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:09:49,929 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:09:49] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:09:53,189 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:53,215 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:53,216 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:53,395 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:53,396 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:53,397 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:53,398 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-11 18:09:53,552 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:09:54,276 - __main__ - INFO - Application started
+2024-04-11 18:10:51,013 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:10:51,015 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:10:51,015 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:10:52,136 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:10:52,819 - __main__ - INFO - Application started
+2024-04-11 18:11:48,988 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:11:48,989 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:11:48,990 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:11:49,602 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:11:50,257 - __main__ - INFO - Application started
+2024-04-11 18:12:10,557 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:12:10,558 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:12:10,559 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:12:11,672 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:12:12,411 - __main__ - INFO - Application started
+2024-04-11 18:12:14,192 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:12:14,193 - __main__ - INFO - Application JSON request
+2024-04-11 18:12:14,194 - __main__ - INFO - SQL Process started
+2024-04-11 18:12:14,197 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:12:15,250 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:12:15] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:12:17,922 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:12:17,922 - __main__ - INFO - Application JSON request
+2024-04-11 18:12:17,923 - app - ERROR - Exception on /_view/company [GET]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1818, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2309, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "D:\Work\Python\Api\app.py", line 127, in before_request
+    if headers['Access-Token'] is not None:
+KeyError: 'Access-Token'
+2024-04-11 18:12:17,927 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:12:17] "[35m[1mGET /_view/company HTTP/1.1[0m" 500 -
+2024-04-11 18:12:22,461 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:12:22,462 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:12:22,463 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:12:22,723 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:12:23,461 - __main__ - INFO - Application started
+2024-04-11 18:13:08,524 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:08,527 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:08,527 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:08,528 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:09,167 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:13:09,902 - __main__ - INFO - Application started
+2024-04-11 18:13:12,010 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:13:12,012 - __main__ - INFO - Application JSON request
+2024-04-11 18:13:12,012 - __main__ - INFO - Token Did not Match
+2024-04-11 18:13:12,014 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:13:12] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:13:15,168 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:13:15,168 - __main__ - INFO - Application JSON request
+2024-04-11 18:13:15,169 - __main__ - INFO - Token Did not Match
+2024-04-11 18:13:15,170 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:13:15] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:13:21,288 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:13:21,288 - __main__ - INFO - Application JSON request
+2024-04-11 18:13:21,289 - __main__ - INFO - SQL Process started
+2024-04-11 18:13:21,294 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:13:22,213 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:13:22] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:13:36,984 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:13:36,985 - __main__ - INFO - Application JSON request
+2024-04-11 18:13:36,986 - app - ERROR - Exception on /_view/company [GET]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1818, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2309, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "D:\Work\Python\Api\app.py", line 133, in before_request
+    encodeToken:str = base64.b64decode(token[1]).decode("utf-8").split('/')
+  File "C:\Python310\lib\base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Invalid base64-encoded string: number of data characters (93) cannot be 1 more than a multiple of 4
+2024-04-11 18:13:36,990 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:13:36] "[35m[1mGET /_view/company HTTP/1.1[0m" 500 -
+2024-04-11 18:13:36,993 - werkzeug - INFO -  * Detected change in 'C:\\Python310\\Lib\\base64.py', reloading
+2024-04-11 18:13:37,313 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:13:37,965 - __main__ - INFO - Application started
+2024-04-11 18:13:42,036 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:42,037 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:42,038 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:42,038 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:13:42,204 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:13:42,925 - __main__ - INFO - Application started
+2024-04-11 18:13:43,935 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:13:43,936 - __main__ - INFO - Application JSON request
+2024-04-11 18:13:43,938 - app - ERROR - Exception on /_view/company [GET]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1818, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2309, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "D:\Work\Python\Api\app.py", line 133, in before_request
+    encodeToken:str = base64.b64decode(token[1]).decode("utf-8").split('/')
+  File "C:\Python310\lib\base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Invalid base64-encoded string: number of data characters (93) cannot be 1 more than a multiple of 4
+2024-04-11 18:13:43,942 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:13:43] "[35m[1mGET /_view/company HTTP/1.1[0m" 500 -
+2024-04-11 18:13:59,342 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:13:59,342 - __main__ - INFO - Application JSON request
+2024-04-11 18:13:59,345 - __main__ - INFO - SQL Process started
+2024-04-11 18:13:59,349 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:14:00,283 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:00] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:14:13,862 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:14:13,863 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:13] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:14:14,073 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 18:14:14,074 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 18:14:14,075 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 18:14:23,639 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:14:23,639 - __main__ - INFO - Application JSON request
+2024-04-11 18:14:23,640 - __main__ - INFO - Token Did not Match
+2024-04-11 18:14:23,641 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:23] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:14:32,695 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:14:32,695 - __main__ - INFO - Application JSON request
+2024-04-11 18:14:32,695 - __main__ - INFO - Token Did not Match
+2024-04-11 18:14:32,696 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:32] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:14:34,433 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:14:34,434 - __main__ - INFO - Application JSON request
+2024-04-11 18:14:34,435 - __main__ - INFO - Token Did not Match
+2024-04-11 18:14:34,436 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:34] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:14:35,294 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:14:35,295 - __main__ - INFO - Application JSON request
+2024-04-11 18:14:35,295 - __main__ - INFO - Token Did not Match
+2024-04-11 18:14:35,296 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:35] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:14:35,816 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:14:35,816 - __main__ - INFO - Application JSON request
+2024-04-11 18:14:35,817 - __main__ - INFO - Token Did not Match
+2024-04-11 18:14:35,818 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:35] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:14:38,879 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:14:38,880 - __main__ - INFO - Application JSON request
+2024-04-11 18:14:38,880 - __main__ - INFO - Token Did not Match
+2024-04-11 18:14:38,881 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:38] "GET /_status HTTP/1.1" 200 -
+2024-04-11 18:14:45,460 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:14:45,462 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:45] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:14:50,558 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:14:50,559 - __main__ - INFO - Application JSON request
+2024-04-11 18:14:50,560 - __main__ - INFO - Token Did not Match
+2024-04-11 18:14:50,561 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:14:50] "GET /_status HTTP/1.1" 200 -
+2024-04-11 18:15:00,710 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:00,710 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:00,712 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:00,713 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:00,951 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:15:01,771 - __main__ - INFO - Application started
+2024-04-11 18:15:02,511 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-11 18:15:02,513 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:02] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-11 18:15:02,519 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:15:02,520 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:02] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:15:10,452 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:15:10,454 - __main__ - INFO - Application JSON request
+2024-04-11 18:15:10,455 - __main__ - INFO - SQL Process started
+2024-04-11 18:15:10,460 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:15:11,657 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:11] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:15:14,557 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:14,559 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:14,560 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:14,560 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:15:15,217 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:15:15,989 - __main__ - INFO - Application started
+2024-04-11 18:15:16,376 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:15:16,377 - __main__ - INFO - Application JSON request
+2024-04-11 18:15:16,378 - __main__ - INFO - SQL Process started
+2024-04-11 18:15:16,385 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:15:17,216 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:17] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:15:21,268 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:15:21,269 - __main__ - INFO - Application JSON request
+2024-04-11 18:15:21,270 - __main__ - INFO - SQL Process started
+2024-04-11 18:15:21,272 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:15:22,035 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:22] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:15:29,319 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:15:29,320 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:29] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:15:29,445 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 18:15:29,445 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 18:15:29,447 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 18:15:33,018 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:15:33,019 - __main__ - INFO - Application JSON request
+2024-04-11 18:15:33,020 - __main__ - INFO - SQL Process started
+2024-04-11 18:15:33,023 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:15:33,970 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:33] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:15:48,014 - __main__ - INFO - Application started
+2024-04-11 18:15:48,074 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-11 18:15:48,074 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-11 18:15:48,083 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:15:48,722 - __main__ - INFO - Application started
+2024-04-11 18:15:57,290 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:15:57,291 - __main__ - INFO - Application JSON request
+2024-04-11 18:15:57,293 - __main__ - INFO - SQL Process started
+2024-04-11 18:15:57,297 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:15:58,184 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:15:58] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:16:01,376 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:16:01,377 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:16:01] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:16:01,502 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 18:16:01,502 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 18:16:01,503 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:16:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 18:16:45,468 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:16:45,471 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:16:45,472 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:16:46,473 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:16:47,342 - __main__ - INFO - Application started
+2024-04-11 18:16:50,231 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:16:50,231 - __main__ - INFO - Application JSON request
+2024-04-11 18:16:50,232 - __main__ - INFO - SQL Process started
+2024-04-11 18:16:50,238 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:16:51,260 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:16:51] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:16:57,901 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:16:57,903 - __main__ - INFO - Application JSON request
+2024-04-11 18:16:57,904 - __main__ - INFO - SQL Process started
+2024-04-11 18:16:57,907 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:16:58,891 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:16:58] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:17:54,412 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:17:54,413 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:17:54,416 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:17:54,417 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:17:55,254 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:17:55,926 - __main__ - INFO - Application started
+2024-04-11 18:18:02,828 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:18:02,830 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:18:02,830 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:18:03,198 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:18:03,843 - __main__ - INFO - Application started
+2024-04-11 18:19:28,750 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:19:28,752 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:19:28,753 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:19:28,753 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:19:28,951 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:19:29,732 - __main__ - INFO - Application started
+2024-04-11 18:19:32,208 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-11 18:19:32,211 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:19:32] "GET /_status/ HTTP/1.1" 200 -
+2024-04-11 18:19:32,332 - __main__ - INFO - Request started for url http://localhost:5000/favicon.ico
+2024-04-11 18:19:32,333 - __main__ - ERROR - URL not found http://localhost:5000/favicon.ico
+2024-04-11 18:19:32,334 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:19:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-11 18:19:37,583 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:19:37,583 - __main__ - INFO - Application JSON request
+2024-04-11 18:19:37,585 - __main__ - INFO - SQL Process started
+2024-04-11 18:19:37,589 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:19:38,509 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:19:38] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:20:29,015 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-11 18:20:29,016 - __main__ - INFO - Application JSON request
+2024-04-11 18:20:29,017 - __main__ - INFO - SQL Process started
+2024-04-11 18:20:29,022 - __main__ - INFO - Pre SQL function called preGetCompany
+2024-04-11 18:20:29,875 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 18:20:29] "GET /_view/company HTTP/1.1" 200 -
+2024-04-11 18:20:32,272 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:20:32,513 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:20:33,265 - __main__ - INFO - Application started
+2024-04-11 18:20:43,694 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:20:43,696 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:20:43,696 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:20:43,697 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-11 18:20:44,559 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-11 18:20:45,232 - __main__ - INFO - Application started

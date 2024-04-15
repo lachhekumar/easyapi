@@ -4,6 +4,8 @@ import yaml
 
 class Config:
 
+    displaySQL: bool = True
+
     #get Route of existing data
     def getRoute(self) -> dict:
         directory = os.getcwd()

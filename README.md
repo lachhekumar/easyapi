@@ -27,7 +27,11 @@ File: Config/route.json
     ],"method":"GET", "gaurd": true, "validate":"input.json"}
 ```
 
+
 > All class will be referred from controller folder eg: Index.getIndex in this example Index is a class and getIndex is a function
+> function can return {'formData' : {}} this will replace the existing formData 
+
+> self.log.info('<your message>') You can create your own log 
 
 - **gaurd** set to true will login/session validator to validate request.
 - **validate** - Request by Querystring/Post as per the validation configured
@@ -115,6 +119,23 @@ condition - will be applied for all query which is execute for given view
 - session. get from session value
 
 
+**Controller/Middleware.py**  can hold the function which can be called pre & post execution of the SQL / Table page.
+Function name should be formatted in the following style pre<request.method><Table|SQL>(input: dict) and post<request.method><Table|SQL>(input: dict)
+**example:**
+- preGetCompany
+- prePostCompany
+
+```python
+    def preGetCompany(input: dict):
+        return True, input  
+```
+
+function should return 2 value 
+- 1. true|false  success status 
+- 2. on success of pre function  it should return "input" assign it can be with modification
+- 3. on success of post function  it should return object
+- 4. on error of pre / post function  should return error object
+
 URL:
 -----------
 - **Pagigantion**: _view/<url>?record=20&page=0   
@@ -123,6 +144,13 @@ URL:
 - _view/company/add -> add new records to system, application should pass info in {data: {}}
 - _view/company/1/update -> update records to system, application should pass info in {data: {}}
 - _view/company/1/delete -> delete records from
+
+## Access Token
+Service will need access token you can get access token form /_status/ call.  Pass access_token which is recieved in header
+{
+  'access-token': ***access-token***
+}
+Access token carry a uuid for every section you can get the same from ***request.uuid***
 
 
 ## Packages

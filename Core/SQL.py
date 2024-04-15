@@ -22,14 +22,18 @@ class SQL:
     dynamicClass: dict = {}
     tableField: dict = {}
 
-    def connect(app):
+    def connect(app, tableData):
         try:
             db = SQLAlchemy(app)
             SQL.db = db
             Validation.SQL = SQL
+
+            #creating tables
+            for table in tableData:
+                SQL.makeClass(table,tableData[table])
+
         except SQLAlchemyError as e:
             errorText = str(e.__dict__['orig'])
-            print(errorText)
             sys.exit(-1)
         return db
 
@@ -37,7 +41,6 @@ class SQL:
     #run raw query
     def query(sql: str,input) -> dict:
         rList: List = []
-        print(SQL.processParameter(sql,input))
         try:
             with SQL.db.engine.connect() as conn:
                 result = conn.execute(text(SQL.processParameter(sql,input)))
@@ -97,7 +100,6 @@ class SQL:
                     else:
                         queryString = text(SQL.processParameter(sqlescape(table)+"."+ sqlescape(filter) + ' ' + 
                                             sqlescape(fData['type']) +  sep + sqlescape(fData['value']) + sep,input))
-                    print(queryString)
                     sqlQuery = sqlQuery.filter(queryString)
 
             #write  direct sql statement
