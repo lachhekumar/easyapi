@@ -24,7 +24,6 @@ logging.basicConfig(encoding='utf-8',level=logging.INFO, format=logFormat, handl
 logging.basicConfig(filename='Logs/debug.log', encoding='utf-8',level=logging.DEBUG, format=logFormat)
 logging.basicConfig(filename='Logs/error.log', encoding='utf-8',level=logging.ERROR, format=logFormat)
 logging.basicConfig(filename='Logs/warning.log', encoding='utf-8',level=logging.WARNING, format=logFormat)
-
 logger = logging.getLogger(__name__)
 logger.info("Application started")
 
@@ -62,47 +61,13 @@ db: dict =dbinfo['default']
 app.config['SQLALCHEMY_DATABASE_URI'] = db['type']+'://'+ db['username']+ ':'+ db['password']+ '@'+ db['host']+ '/'+ db['database']
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# session configuration
-# session["name"] = request.form.get("name")
-
-# app.config["SESSION_PERMANENT"] = False
-# app.config["SESSION_TYPE"] = "filesystem"
-# Session(app)
-
-
 # connecting to db
-db = SQL.connect(app)
-
-#creating tables
-for table in tableData:
-    SQL.makeClass(table,tableData[table])
-
-
-for route in applicationRoute:
-    if route.get('method')  is None:
-        route['method'] = 'GET'
-
-    app.add_url_rule(route['path'],methods = [route['method']],view_func=Controller.processUrl,defaults = {
-         '_info': route, 'db': db,'log': logger
-      })
-
-# add default view for sql service
-allowedMethod: list =['GET','POST','PUT','DELETE']
-for sql in sqlData:
-    parameter: dict = {'_info': sql,'db': db,'log': logger}
-    app.add_url_rule('/_view/' + sql,methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)
-    app.add_url_rule('/_view/' + sql +'/<id>',methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)   
-    app.add_url_rule('/_view/' + sql +'/<id>/<action>',methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)
-
+db = SQL.connect(app, tableData)
+Controller.createRoute(app,applicationRoute, sqlData, db, logger)
 
 #upload default function
 parameter: dict = {'log': logger}
 app.add_url_rule('/_upload/',methods = ['POST'],view_func=Controller.uploadFile,defaults = parameter)    
-
-
-
-#upload default function
-parameter: dict = {'log': logger}
 app.add_url_rule('/_status/',methods = ['GET'],view_func=Controller.status,defaults = parameter)    
 
 # @app.before_request
@@ -118,9 +83,9 @@ def page_not_found(error):
 @app.before_request
 def before_request():
 
-    logger.info('Request started for url ' + request.url)
-    
+    logger.info('Request started for url ' + request.url)   
 
+    
     if(str(request.content_type) == 'application/json' and request.path != '/_status/' and request.path != '/_status' and request.path != '/_replace/'):
         headers = dict(request.headers)
         logger.info('Application JSON request')
@@ -151,4 +116,4 @@ def before_request():
 
 
 # Run application from in realoader mode
-app.run(passthrough_errors=True,use_reloader=True)
+app.run(passthrough_errors=True,use_reloader=True, threaded=True)

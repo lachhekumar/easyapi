@@ -22,11 +22,16 @@ class SQL:
     dynamicClass: dict = {}
     tableField: dict = {}
 
-    def connect(app):
+    def connect(app, tableData):
         try:
             db = SQLAlchemy(app)
             SQL.db = db
             Validation.SQL = SQL
+
+            #creating tables
+            for table in tableData:
+                SQL.makeClass(table,tableData[table])
+
         except SQLAlchemyError as e:
             errorText = str(e.__dict__['orig'])
             sys.exit(-1)

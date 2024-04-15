@@ -1,6 +1,7 @@
 from flask import jsonify
 from flask import request
 from flask import Response
+from flask import url_for
 from Core.Config import Config
 from sqlalchemy.exc import SQLAlchemyError
 from werkzeug.utils import secure_filename
@@ -16,8 +17,84 @@ import uuid
 import hashlib
 import datetime
 import base64, random
+import requests
 
 class Controller:
+
+
+
+    def createRoute(app, routes, sqlData, db, logger):
+        for route in routes:
+            if route.get('method')  is None:
+                route['method'] = 'GET'
+
+            app.add_url_rule(route['path'],methods = [route['method']],view_func=Controller.processUrl,defaults = {
+                '_info': route, 'db': db,'log': logger, 'type': route['path']
+            })
+
+        # add default view for sql service
+        allowedMethod: list =['GET','POST','PUT','DELETE']
+        for sql in sqlData:
+            parameter: dict = {'_info': sql,'db': db,'log': logger}
+            app.add_url_rule('/_view/' + sql,methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)
+            app.add_url_rule('/_view/' + sql +'/<id>',methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)   
+            app.add_url_rule('/_view/' + sql +'/<id>/<action>',methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)
+
+
+    def call(url,data = None,type = None):
+        res = requests.get(request.base_url + '_status').json()
+        token = res['access_token']
+
+        if type.lower() == 'post':
+            res = requests.post(request.base_url + url, json  = data, headers= {
+                'access-token': token
+            }).json()
+
+        elif type.lower() == 'patch':
+            res = requests.patch(request.base_url + url, json  = data, headers= {
+                'access-token': token
+            }).json()
+
+        elif type.lower() == 'put':
+            res = requests.put(request.base_url + url, json  = data, headers= {
+                'access-token': token
+            }).json()
+
+        elif type.lower() == 'put':
+            res = requests.delete(request.base_url + url, headers= {
+                'access-token': token
+            }).json()
+
+        return res
+
+
+    # get form data into the system
+    def getFormData():
+
+        formData:dict = {}
+        if request.method == 'POST' or request.method == 'PATCH':            
+            if request.form != '' and len(request.form) > 0:
+                formData = request.form.to_dict()   
+            elif isinstance(request.json, (dict,list)):
+                formData.update(request.json)
+            elif request.data != '' and len(request.data) > 0:
+                    d = json.loads(request.data)
+                    if 'data' in d.keys():
+                        formData.update(d['data'])
+
+        return formData
+    
+
+    #get the input data from the query string
+    def getGetData():
+        formData: dict = {}
+        args = request.args
+        for name, value in args.items():
+            formData[name] =value
+        return formData
+
+
+
     def status(**kwargs) -> dict:
         
         currentDate: str = datetime.datetime.now().strftime('%Y%m%d')
@@ -67,20 +144,12 @@ class Controller:
             return jsonify({'error': 'SYS001','text' : 'Method not allowed'})        
 
         if request.method != 'GET':
-            formData = request.form.to_dict()   
-            content_type = request.headers.get('Content-Type') 
-            sendData['formData']:dict = {}
-            if request.form != '' and len(request.form) > 0:
-                sendData['formData'] = request.form.to_dict()
-            elif request.data != '' and len(request.data) > 0:
-                try:         
-                    d = json.loads(request.data)
-                    if 'data' in d.keys():
-                        formData.update(d['data'])
-
-                except ValueError:
-                    kwargs['log'].error('Json input is not correct')
-                    return  jsonify({'error': 'SYS002','text' : 'Json input is not correct'})
+            formData: dict = {}
+            try:         
+                formData = Controller.getFormData()
+            except ValueError:
+                kwargs['log'].error('Json input is not correct')
+                return  jsonify({'error': 'SYS002','text' : 'Json input is not correct'})
             sendData['formData'] = formData
 
             if isinstance(request.json, (dict,list)):
@@ -233,20 +302,15 @@ class Controller:
 
 
 
-
+        #getting information about system
         if request.method != 'GET':
-            formData = request.form.to_dict()    
+            try:         
+                formData = Controller.getFormData()
+            except ValueError:
+                error = True
+                kwargs['log'].error('Json input is not correct')
+                output = {'error': 'SYS002','text' : 'Json input is not correct'}
 
-            if request.data != '' and len(request.data) > 0:
-                try:         
-                    d = json.loads(request.data)
-                    if 'data' in d.keys():
-                        formData.update(d['data'])
-
-                except ValueError:
-                    error = True
-                    kwargs['log'].error('Json input is not correct')
-                    output = {'error': 'SYS002','text' : 'Json input is not correct'}
 
         if _functionList['pre'] == True:
             kwargs['log'].info("Pre SQL function called pre" + request.method.capitalize() + _info.capitalize())
