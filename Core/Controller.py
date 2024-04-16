@@ -1,7 +1,7 @@
 from flask import jsonify
 from flask import request
 from flask import Response
-from flask import url_for
+from flask import render_template
 from Core.Config import Config
 from sqlalchemy.exc import SQLAlchemyError
 from werkzeug.utils import secure_filename
@@ -22,14 +22,14 @@ import requests
 class Controller:
 
 
-
     def createRoute(app, routes, sqlData, db, logger):
         for route in routes:
             if route.get('method')  is None:
                 route['method'] = 'GET'
 
             app.add_url_rule(route['path'],methods = [route['method']],view_func=Controller.processUrl,defaults = {
-                '_info': route, 'db': db,'log': logger, 'type': route['path']
+                '_info': route, 'db': db,'log': logger, 'path': route['path'], 'type': route['type'] if 'type' in route else 'json'
+                , 'template': route['tempalte'] if 'tempalte' in route else 'template.html'
             })
 
         # add default view for sql service
@@ -45,23 +45,27 @@ class Controller:
         res = requests.get(request.base_url + '_status').json()
         token = res['access_token']
 
-        if type.lower() == 'post':
+        if type is not None and type.lower() == 'post':
             res = requests.post(request.base_url + url, json  = data, headers= {
                 'access-token': token
             }).json()
 
-        elif type.lower() == 'patch':
+        elif type is not None and type.lower() == 'patch':
             res = requests.patch(request.base_url + url, json  = data, headers= {
                 'access-token': token
             }).json()
 
-        elif type.lower() == 'put':
+        elif type is not None and type.lower() == 'put':
             res = requests.put(request.base_url + url, json  = data, headers= {
                 'access-token': token
             }).json()
 
-        elif type.lower() == 'put':
+        elif type is not None and type.lower() == 'put':
             res = requests.delete(request.base_url + url, headers= {
+                'access-token': token
+            }).json()
+        else:
+            res = requests.get(request.base_url + url, headers= {
                 'access-token': token
             }).json()
 
@@ -213,8 +217,11 @@ class Controller:
 
                 if 'formData' in gotData and gotData['formData'] is not None:
                     sendData['formData'] = gotData['formData']
-
-        sendToBrowser: str = jsonify(gotData)
+        sendToBrowser: str = ''
+        if kwargs['type'].lower() == 'html':
+            sendToBrowser = render_template(kwargs['template'] if kwargs['template'] is not None else 'template.html',data=sendData)
+        else: 
+            sendToBrowser = jsonify(gotData)
         return sendToBrowser
 
     # --------------------------- find controller ---------------------------- #

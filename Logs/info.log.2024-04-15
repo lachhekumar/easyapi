@@ -1,0 +1,994 @@
+2024-04-15 21:33:17,381 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:33:17,382 - __main__ - INFO - URL process started
+2024-04-15 21:33:17,386 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:33:17] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:33:49,910 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:33:49,910 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:33:49,926 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:33:49,926 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:33:50,335 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:33:52,110 - __main__ - INFO - Application started
+2024-04-15 21:33:53,183 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:33:53,183 - __main__ - INFO - URL process started
+2024-04-15 21:33:53,240 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:33:53] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:34:02,940 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:02,940 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:02,940 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:03,626 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:34:05,170 - __main__ - INFO - Application started
+2024-04-15 21:34:07,255 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:34:07,263 - __main__ - INFO - URL process started
+2024-04-15 21:34:07,271 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:34:07] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:34:26,011 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:26,011 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:26,011 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:26,011 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:26,734 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:34:28,319 - __main__ - INFO - Application started
+2024-04-15 21:34:28,554 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:34:28,554 - __main__ - INFO - URL process started
+2024-04-15 21:34:28,562 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:34:28] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:34:52,408 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:52,410 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:52,411 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:34:52,771 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:34:53,452 - __main__ - INFO - Application started
+2024-04-15 21:35:03,646 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:03,656 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:03,657 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:04,783 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:35:05,519 - __main__ - INFO - Application started
+2024-04-15 21:35:06,508 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:35:06,508 - __main__ - INFO - URL process started
+2024-04-15 21:35:06,523 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:35:06] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:35:13,939 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:13,939 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:13,939 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:14,840 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:35:15,580 - __main__ - INFO - Application started
+2024-04-15 21:35:16,886 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:17,023 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:17,023 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 21:35:17,801 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:35:18,458 - __main__ - INFO - Application started
+2024-04-15 21:40:01,210 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:01,211 - __main__ - INFO - URL process started
+2024-04-15 21:40:01,214 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:01] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:02,345 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:02,346 - __main__ - INFO - URL process started
+2024-04-15 21:40:02,348 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:02] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:03,312 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:03,312 - __main__ - INFO - URL process started
+2024-04-15 21:40:03,316 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:03] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:04,252 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:04,252 - __main__ - INFO - URL process started
+2024-04-15 21:40:04,254 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:04] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:05,194 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:05,195 - __main__ - INFO - URL process started
+2024-04-15 21:40:05,196 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:05] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:06,195 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:06,195 - __main__ - INFO - URL process started
+2024-04-15 21:40:06,197 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:06] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:06,929 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:06,929 - __main__ - INFO - URL process started
+2024-04-15 21:40:06,930 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:06] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:07,592 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:07,592 - __main__ - INFO - URL process started
+2024-04-15 21:40:07,594 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:07] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:08,024 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:08,024 - __main__ - INFO - URL process started
+2024-04-15 21:40:08,026 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:08] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:08,577 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:08,577 - __main__ - INFO - URL process started
+2024-04-15 21:40:08,579 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:08] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:08,981 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:08,981 - __main__ - INFO - URL process started
+2024-04-15 21:40:08,983 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:08] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:40:09,542 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:40:09,542 - __main__ - INFO - URL process started
+2024-04-15 21:40:09,544 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:40:09] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:42:29,003 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:42:29,003 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:42:29,003 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:42:29,003 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:42:29,482 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:42:30,320 - __main__ - INFO - Application started
+2024-04-15 21:42:31,872 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:42:31,872 - __main__ - INFO - URL process started
+2024-04-15 21:42:31,872 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:42:31] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:42:44,184 - __main__ - INFO - Application started
+2024-04-15 21:42:44,262 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 21:42:44,262 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 21:42:44,262 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:42:44,954 - __main__ - INFO - Application started
+2024-04-15 21:42:46,391 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:42:46,391 - __main__ - INFO - URL process started
+2024-04-15 21:42:46,393 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:42:46] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:42:48,636 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:42:48,637 - __main__ - INFO - URL process started
+2024-04-15 21:42:48,640 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:42:48] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:43:13,737 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:43:13,752 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:43:13,752 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:43:13,752 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:43:14,426 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:43:15,144 - __main__ - INFO - Application started
+2024-04-15 21:43:17,278 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:43:17,279 - __main__ - INFO - URL process started
+2024-04-15 21:43:17,282 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:43:17] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:47:00,273 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:47:00,273 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:47:00,273 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:47:00,536 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:47:01,224 - __main__ - INFO - Application started
+2024-04-15 21:53:54,221 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:53:54,221 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:53:54,221 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:53:54,221 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:53:55,122 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:53:55,882 - __main__ - INFO - Application started
+2024-04-15 21:53:57,845 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:53:57,846 - __main__ - INFO - URL process started
+2024-04-15 21:53:57,849 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:53:57] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 21:57:04,464 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:57:04,464 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:57:04,464 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 21:57:05,542 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 21:57:06,241 - __main__ - INFO - Application started
+2024-04-15 21:57:09,198 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 21:57:09,198 - __main__ - INFO - URL process started
+2024-04-15 21:57:09,213 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 21:57:09] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 22:01:13,917 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:01:13,924 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:01:13,924 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:01:14,228 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:01:44,917 - __main__ - INFO - Application started
+2024-04-15 22:01:44,995 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 22:01:44,995 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 22:01:44,995 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:01:45,748 - __main__ - INFO - Application started
+2024-04-15 22:03:13,875 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:03:13,889 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:03:13,890 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:03:13,890 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:03:14,598 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:03:15,531 - __main__ - INFO - Application started
+2024-04-15 22:04:28,103 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:04:28,107 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:04:28,108 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:04:28,109 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:04:28,956 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:04:29,848 - __main__ - INFO - Application started
+2024-04-15 22:04:35,459 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:35,467 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:35,468 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:36,063 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:04:36,737 - __main__ - INFO - Application started
+2024-04-15 22:04:42,823 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:42,824 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:42,825 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:42,994 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:04:43,657 - __main__ - INFO - Application started
+2024-04-15 22:04:47,734 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:47,736 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:47,736 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:47,858 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:04:48,583 - __main__ - INFO - Application started
+2024-04-15 22:04:50,486 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:50,487 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:50,488 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:50,488 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:50,790 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:04:51,451 - __main__ - INFO - Application started
+2024-04-15 22:04:57,029 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:57,029 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:57,029 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:04:57,673 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:04:58,380 - __main__ - INFO - Application started
+2024-04-15 22:05:49,855 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Config.py', reloading
+2024-04-15 22:05:50,979 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:05:51,657 - __main__ - INFO - Application started
+2024-04-15 22:05:58,646 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:05:58,648 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:05:58,648 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:05:58,649 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:05:58,916 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:06:51,326 - __main__ - INFO - Application started
+2024-04-15 22:08:09,876 - __main__ - INFO - Application started
+2024-04-15 22:08:09,939 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 22:08:09,939 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 22:08:09,954 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:08:10,613 - __main__ - INFO - Application started
+2024-04-15 22:08:13,346 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:08:13,346 - __main__ - INFO - URL process started
+2024-04-15 22:08:13,346 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:08:13] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 22:08:18,023 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:08:18,023 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:08:18,023 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:08:18,023 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:08:18,854 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:08:19,514 - __main__ - INFO - Application started
+2024-04-15 22:08:24,129 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:08:24,129 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:08:24] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:08:24,144 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:08:24,144 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:08:24] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:08:27,247 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:08:27,248 - __main__ - INFO - URL process started
+2024-04-15 22:08:27,251 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:08:27] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 22:08:30,532 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:08:30,532 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:08:30,532 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:08:30,792 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:08:31,435 - __main__ - INFO - Application started
+2024-04-15 22:09:24,056 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:09:24,056 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:09:24,056 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:09:24,056 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:09:25,073 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:09:25,745 - __main__ - INFO - Application started
+2024-04-15 22:09:38,733 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\SQL.py', reloading
+2024-04-15 22:09:39,037 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:09:39,895 - __main__ - INFO - Application started
+2024-04-15 22:09:59,388 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:09:59,388 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:09:59,388 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:09:59,388 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:10:00,277 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:10:00,910 - __main__ - INFO - Application started
+2024-04-15 22:10:31,389 - __main__ - INFO - Application started
+2024-04-15 22:10:31,467 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 22:10:31,467 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 22:10:31,467 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:10:32,122 - __main__ - INFO - Application started
+2024-04-15 22:10:36,176 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:10:36,176 - __main__ - INFO - URL process started
+2024-04-15 22:10:36,176 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:10:36] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 22:10:45,132 - __main__ - INFO - Request started for url http://localhost:5000/_view/company
+2024-04-15 22:10:45,132 - __main__ - INFO - Application JSON request
+2024-04-15 22:10:45,136 - __main__ - INFO - SQL Process started
+2024-04-15 22:11:06,201 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:11:06] "POST /_view/company HTTP/1.1" 200 -
+2024-04-15 22:16:58,826 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:16:58,826 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:16:58,826 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:16:58,826 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:16:59,872 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:17:00,528 - __main__ - INFO - Application started
+2024-04-15 22:18:15,350 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:15,352 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:15,352 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:15,459 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:18:16,178 - __main__ - INFO - Application started
+2024-04-15 22:18:16,625 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:16,626 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:16,627 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:17,372 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:18:18,045 - __main__ - INFO - Application started
+2024-04-15 22:18:30,312 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:30,312 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:30,312 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:18:31,377 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:18:32,053 - __main__ - INFO - Application started
+2024-04-15 22:18:35,661 - __main__ - INFO - Application started
+2024-04-15 22:18:35,724 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 22:18:35,724 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 22:18:35,740 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:18:36,384 - __main__ - INFO - Application started
+2024-04-15 22:19:03,919 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:19:03,920 - __main__ - INFO - Application JSON request
+2024-04-15 22:19:03,920 - __main__ - INFO - URL process started
+2024-04-15 22:19:03,922 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:19:03,923 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 179, in processUrl
+    if isinstance(returnData, Response):
+NameError: name 'Response' is not defined
+2024-04-15 22:19:03,925 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:19:03] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-04-15 22:19:05,363 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:19:05,364 - __main__ - INFO - Application JSON request
+2024-04-15 22:19:05,365 - __main__ - INFO - URL process started
+2024-04-15 22:19:05,366 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:19:05,366 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 179, in processUrl
+    if isinstance(returnData, Response):
+NameError: name 'Response' is not defined
+2024-04-15 22:19:05,368 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:19:05] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-04-15 22:19:09,369 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:19:09,369 - __main__ - INFO - Application JSON request
+2024-04-15 22:19:09,370 - __main__ - INFO - URL process started
+2024-04-15 22:19:09,370 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:19:09,371 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 179, in processUrl
+    if isinstance(returnData, Response):
+NameError: name 'Response' is not defined
+2024-04-15 22:19:09,372 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:19:09] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-04-15 22:19:40,747 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:40,762 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:40,762 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:41,058 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:19:41,745 - __main__ - INFO - Application started
+2024-04-15 22:19:47,809 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:47,811 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:47,812 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:48,786 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:19:49,449 - __main__ - INFO - Application started
+2024-04-15 22:19:51,236 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:51,248 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:51,248 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:19:51,645 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:19:52,418 - __main__ - INFO - Application started
+2024-04-15 22:19:59,067 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:19:59,067 - __main__ - INFO - Application JSON request
+2024-04-15 22:19:59,067 - __main__ - INFO - URL process started
+2024-04-15 22:19:59,067 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:19:59,067 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 181, in processUrl
+    if isinstance(returnData, Response):
+NameError: name 'Response' is not defined
+2024-04-15 22:19:59,083 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:19:59] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-04-15 22:20:30,548 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:20:30,548 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:20:30,548 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:20:30,936 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:20:31,747 - __main__ - INFO - Application started
+2024-04-15 22:20:35,548 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:20:35,548 - __main__ - INFO - Application JSON request
+2024-04-15 22:20:35,548 - __main__ - INFO - URL process started
+2024-04-15 22:20:35,548 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:20:35,548 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:20:35,548 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:20:35] "POST / HTTP/1.1" 200 -
+2024-04-15 22:21:26,031 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:21:26,034 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:21:26,035 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:21:26,432 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:21:27,093 - __main__ - INFO - Application started
+2024-04-15 22:21:29,311 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:21:29,311 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:21:29,311 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:21:30,293 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:21:30,956 - __main__ - INFO - Application started
+2024-04-15 22:22:19,719 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:19,719 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:19,719 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:20,463 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:22:21,227 - __main__ - INFO - Application started
+2024-04-15 22:22:21,772 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:22:21,772 - __main__ - INFO - Application JSON request
+2024-04-15 22:22:21,772 - __main__ - INFO - URL process started
+2024-04-15 22:22:21,772 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:22:21,772 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:22:21,788 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:22:21] "POST / HTTP/1.1" 200 -
+2024-04-15 22:22:52,598 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:52,600 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:52,601 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:53,461 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:53,461 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:53,461 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:22:53,709 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:22:54,430 - __main__ - INFO - Application started
+2024-04-15 22:23:04,768 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:23:04,769 - __main__ - INFO - URL process started
+2024-04-15 22:23:04,772 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:23:04] "[31m[1mPOST / HTTP/1.1[0m" 415 -
+2024-04-15 22:23:10,351 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:23:10,351 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:23:10,351 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:23:10,760 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:23:11,485 - __main__ - INFO - Application started
+2024-04-15 22:23:14,924 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:23:14,924 - __main__ - INFO - Application JSON request
+2024-04-15 22:23:14,924 - __main__ - INFO - URL process started
+2024-04-15 22:23:14,924 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:23:14,939 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:23:14,939 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:23:14] "POST / HTTP/1.1" 200 -
+2024-04-15 22:24:05,790 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:24:05,790 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:24:05,790 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:24:06,900 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:24:07,579 - __main__ - INFO - Application started
+2024-04-15 22:24:24,719 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:24:24,790 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:24:24,941 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:24:25,639 - __main__ - INFO - Application started
+2024-04-15 22:24:33,299 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:24:33,393 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:24:33,876 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:24:34,514 - __main__ - INFO - Application started
+2024-04-15 22:29:15,985 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:29:16,331 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:29:16,833 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:29:17,602 - __main__ - INFO - Application started
+2024-04-15 22:29:34,684 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:29:34,684 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:29:34,684 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:29:34,880 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:29:35,499 - __main__ - INFO - Application started
+2024-04-15 22:29:59,544 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:29:59,544 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:29:59,544 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:29:59,921 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:30:01,384 - __main__ - INFO - Application started
+2024-04-15 22:30:18,433 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:30:18,433 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:30:18,433 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:30:18,761 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:38:38,440 - __main__ - INFO - Application started
+2024-04-15 22:38:38,487 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 22:38:38,487 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 22:38:38,502 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:38:39,293 - __main__ - INFO - Application started
+2024-04-15 22:38:41,351 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:38:41,353 - __main__ - INFO - Application JSON request
+2024-04-15 22:38:41,353 - __main__ - INFO - URL process started
+2024-04-15 22:38:41,358 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:38:41,359 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:38:41,360 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:38:41] "POST / HTTP/1.1" 200 -
+2024-04-15 22:38:44,609 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:38:44,609 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:38:44,624 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:38:45,589 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:38:46,310 - __main__ - INFO - Application started
+2024-04-15 22:39:56,687 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:39:56,688 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:39:56,688 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:39:56,689 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:39:57,047 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:39:57,811 - __main__ - INFO - Application started
+2024-04-15 22:40:31,806 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Clients.py', reloading
+2024-04-15 22:40:32,387 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:40:33,135 - __main__ - INFO - Application started
+2024-04-15 22:40:41,665 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:40:42,225 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:40:42,385 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:40:43,117 - __main__ - INFO - Application started
+2024-04-15 22:40:54,690 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:40:54,791 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:40:55,429 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:40:56,135 - __main__ - INFO - Application started
+2024-04-15 22:42:13,011 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:42:13,356 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:42:13,890 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:42:14,785 - __main__ - INFO - Application started
+2024-04-15 22:42:28,583 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:42:28,614 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:42:28,614 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:42:29,098 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:42:29,830 - __main__ - INFO - Application started
+2024-04-15 22:42:44,478 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:42:44,479 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:42:44,480 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:42:45,187 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:42:45,919 - __main__ - INFO - Application started
+2024-04-15 22:42:51,249 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:42:51,251 - __main__ - INFO - Application JSON request
+2024-04-15 22:42:51,252 - __main__ - INFO - URL process started
+2024-04-15 22:42:51,269 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:42:51,270 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 159, in processUrl
+    returnData = getattr(cclass,components[1])(**sendData)
+  File "D:\Work\Python\Api\Controller\Index.py", line 6, in getIndex
+    Controller.call('/_status')
+  File "D:\Work\Python\Api\Core\Controller.py", line 45, in call
+    print(url_for('/_status'))
+  File "C:\Python310\lib\site-packages\flask\helpers.py", line 256, in url_for
+    return current_app.url_for(
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Python310\lib\site-packages\werkzeug\routing\map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/_status'. Did you mean 'status' instead?
+2024-04-15 22:42:51,272 - werkzeug - INFO -  * Detected change in 'C:\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
+2024-04-15 22:42:51,278 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:42:51] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-04-15 22:42:51,278 - werkzeug - INFO -  * Detected change in 'C:\\Python310\\Lib\\site-packages\\flask_cors\\extension.py', reloading
+2024-04-15 22:42:51,279 - werkzeug - INFO -  * Detected change in 'C:\\Python310\\Lib\\site-packages\\flask\\helpers.py', reloading
+2024-04-15 22:42:51,281 - werkzeug - INFO -  * Detected change in 'C:\\Python310\\Lib\\site-packages\\werkzeug\\routing\\map.py', reloading
+2024-04-15 22:42:52,157 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:42:52,908 - __main__ - INFO - Application started
+2024-04-15 22:43:06,722 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:43:06,722 - __main__ - INFO - Application JSON request
+2024-04-15 22:43:06,722 - __main__ - INFO - URL process started
+2024-04-15 22:43:06,722 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:43:06,722 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 159, in processUrl
+    returnData = getattr(cclass,components[1])(**sendData)
+  File "D:\Work\Python\Api\Controller\Index.py", line 6, in getIndex
+    Controller.call('/_status')
+  File "D:\Work\Python\Api\Core\Controller.py", line 45, in call
+    print(url_for('/_status'))
+  File "C:\Python310\lib\site-packages\flask\helpers.py", line 256, in url_for
+    return current_app.url_for(
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Python310\lib\site-packages\werkzeug\routing\map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/_status'. Did you mean 'status' instead?
+2024-04-15 22:43:06,737 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:43:06] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-04-15 22:43:12,147 - __main__ - INFO - Application started
+2024-04-15 22:43:12,194 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 22:43:12,194 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 22:43:12,209 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:43:12,943 - __main__ - INFO - Application started
+2024-04-15 22:43:16,320 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:43:16,321 - __main__ - INFO - Application JSON request
+2024-04-15 22:43:16,321 - __main__ - INFO - URL process started
+2024-04-15 22:43:16,325 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:43:16,325 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Work\Python\Api\Core\Controller.py", line 159, in processUrl
+    returnData = getattr(cclass,components[1])(**sendData)
+  File "D:\Work\Python\Api\Controller\Index.py", line 6, in getIndex
+    Controller.call('/_status')
+  File "D:\Work\Python\Api\Core\Controller.py", line 45, in call
+    print(url_for('/_status'))
+  File "C:\Python310\lib\site-packages\flask\helpers.py", line 256, in url_for
+    return current_app.url_for(
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Python310\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Python310\lib\site-packages\werkzeug\routing\map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/_status'. Did you mean 'status' instead?
+2024-04-15 22:43:16,330 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:43:16] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-04-15 22:45:14,626 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:45:14,641 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:45:14,641 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:45:14,979 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:45:15,763 - __main__ - INFO - Application started
+2024-04-15 22:45:18,082 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:45:18,083 - __main__ - INFO - Application JSON request
+2024-04-15 22:45:18,084 - __main__ - INFO - URL process started
+2024-04-15 22:45:18,086 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:45:18,087 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:45:18,088 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:45:18] "POST / HTTP/1.1" 200 -
+2024-04-15 22:45:28,551 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:45:28,552 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:45:28,552 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:45:29,082 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:45:29,893 - __main__ - INFO - Application started
+2024-04-15 22:45:31,228 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:45:31,229 - __main__ - INFO - Application JSON request
+2024-04-15 22:45:31,230 - __main__ - INFO - URL process started
+2024-04-15 22:45:31,233 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:45:31,233 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:45:31,235 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:45:31] "POST / HTTP/1.1" 200 -
+2024-04-15 22:46:37,501 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:46:37,501 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:46:37,517 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:46:38,583 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:46:39,345 - __main__ - INFO - Application started
+2024-04-15 22:46:42,805 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:46:42,806 - __main__ - INFO - Application JSON request
+2024-04-15 22:46:42,806 - __main__ - INFO - URL process started
+2024-04-15 22:46:42,808 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:46:42,809 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:46:42,810 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:46:42] "POST / HTTP/1.1" 200 -
+2024-04-15 22:47:20,181 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:47:20,184 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:47:20,184 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:47:20,876 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:47:21,652 - __main__ - INFO - Application started
+2024-04-15 22:47:24,799 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:47:24,800 - __main__ - INFO - Application JSON request
+2024-04-15 22:47:24,801 - __main__ - INFO - URL process started
+2024-04-15 22:47:24,803 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:47:26,845 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:47:26,845 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:47:26] "[32mGET //_status HTTP/1.1[0m" 308 -
+2024-04-15 22:47:28,863 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:47:28,864 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:47:28] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:47:28,866 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:47:28,868 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:47:28] "POST / HTTP/1.1" 200 -
+2024-04-15 22:49:49,865 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:49:49,865 - __main__ - INFO - Application JSON request
+2024-04-15 22:49:49,865 - __main__ - INFO - URL process started
+2024-04-15 22:49:49,865 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:49:51,888 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:49:51,888 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:49:51] "[32mGET //_status HTTP/1.1[0m" 308 -
+2024-04-15 22:49:53,929 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:49:53,930 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:49:53] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:49:53,932 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:49:53,933 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:49:53] "POST / HTTP/1.1" 200 -
+2024-04-15 22:50:00,055 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:50:00,064 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:50:00,065 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:50:00,731 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:50:01,555 - __main__ - INFO - Application started
+2024-04-15 22:50:02,214 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:50:02,214 - __main__ - INFO - Application JSON request
+2024-04-15 22:50:02,214 - __main__ - INFO - URL process started
+2024-04-15 22:50:02,214 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:50:02,214 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:50:02,229 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:50:02] "POST / HTTP/1.1" 200 -
+2024-04-15 22:50:03,327 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:50:03,327 - __main__ - INFO - Application JSON request
+2024-04-15 22:50:03,327 - __main__ - INFO - URL process started
+2024-04-15 22:50:03,327 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:50:03,327 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:50:03,327 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:50:03] "POST / HTTP/1.1" 200 -
+2024-04-15 22:52:59,772 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:52:59,772 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:52:59,772 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:53:00,223 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:53:01,021 - __main__ - INFO - Application started
+2024-04-15 22:53:04,642 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:04,642 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:04,642 - __main__ - INFO - URL process started
+2024-04-15 22:53:04,642 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:06,682 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:53:06,682 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:06] "[32mGET //_status HTTP/1.1[0m" 308 -
+2024-04-15 22:53:08,728 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:53:08,729 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:08] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:53:08,732 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:08,733 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:08] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:20,223 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:53:20,223 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:53:20,223 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:53:20,365 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:53:21,170 - __main__ - INFO - Application started
+2024-04-15 22:53:23,182 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:23,182 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:23,182 - __main__ - INFO - URL process started
+2024-04-15 22:53:23,182 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:23,182 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:23,182 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:23] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:25,726 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:25,726 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:25,726 - __main__ - INFO - URL process started
+2024-04-15 22:53:25,726 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:25,726 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:25,726 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:25] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:26,570 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:26,570 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:26,570 - __main__ - INFO - URL process started
+2024-04-15 22:53:26,570 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:26,570 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:26,570 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:26] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:27,397 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:27,397 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:27,398 - __main__ - INFO - URL process started
+2024-04-15 22:53:27,399 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:27,399 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:27,400 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:27] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:27,898 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:27,898 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:27,899 - __main__ - INFO - URL process started
+2024-04-15 22:53:27,899 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:27,900 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:27,900 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:27] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:28,449 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:28,450 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:28,450 - __main__ - INFO - URL process started
+2024-04-15 22:53:28,451 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:28,451 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:28,452 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:28] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:29,091 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:29,091 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:29,092 - __main__ - INFO - URL process started
+2024-04-15 22:53:29,093 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:29,094 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:29,095 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:29] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:29,591 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:29,591 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:29,591 - __main__ - INFO - URL process started
+2024-04-15 22:53:29,592 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:29,592 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:29,593 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:29] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:32,261 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:32,262 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:32,262 - __main__ - INFO - URL process started
+2024-04-15 22:53:32,263 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:32,263 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:32,264 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:32] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:33,135 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:33,135 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:33,136 - __main__ - INFO - URL process started
+2024-04-15 22:53:33,136 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:33,137 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:33,137 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:33] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:34,167 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:34,167 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:34,167 - __main__ - INFO - URL process started
+2024-04-15 22:53:34,168 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:34,168 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:34,169 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:34] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:38,572 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:53:38,573 - __main__ - INFO - Application JSON request
+2024-04-15 22:53:38,573 - __main__ - INFO - URL process started
+2024-04-15 22:53:38,574 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:53:38,574 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:53:38,575 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:38] "POST / HTTP/1.1" 200 -
+2024-04-15 22:53:44,267 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:53:44,267 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:53:44,267 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:53:44,565 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:53:45,265 - __main__ - INFO - Application started
+2024-04-15 22:53:57,293 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:53:57,293 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:57] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:53:57,309 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:53:57,309 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:57] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:53:58,532 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:53:58,532 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:58] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:53:58,548 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:53:58,548 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:53:58] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:54:00,178 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:54:00,179 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:00] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:54:00,186 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:54:00,187 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:00] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:54:01,531 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:54:01,532 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:01] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:54:01,538 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:54:01,539 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:01] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:54:04,140 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:54:04,140 - __main__ - INFO - Application JSON request
+2024-04-15 22:54:04,141 - __main__ - INFO - URL process started
+2024-04-15 22:54:04,143 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:54:06,197 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:54:06,198 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:06] "[32mGET //_status HTTP/1.1[0m" 308 -
+2024-04-15 22:54:08,246 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:54:08,247 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:08] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:54:08,477 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:54:08,479 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:08] "POST / HTTP/1.1" 200 -
+2024-04-15 22:54:13,174 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:54:13,174 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:54:13,174 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:54:13,737 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:54:14,485 - __main__ - INFO - Application started
+2024-04-15 22:54:16,611 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:54:16,611 - __main__ - INFO - Application JSON request
+2024-04-15 22:54:16,611 - __main__ - INFO - URL process started
+2024-04-15 22:54:16,611 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:54:18,651 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:54:18,651 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:18] "[32mGET //_status HTTP/1.1[0m" 308 -
+2024-04-15 22:54:20,684 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:54:20,685 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:20] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:54:20,687 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:54:20,688 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:20] "POST / HTTP/1.1" 200 -
+2024-04-15 22:54:27,119 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:54:27,134 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:54:27,134 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:54:27,782 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:54:28,543 - __main__ - INFO - Application started
+2024-04-15 22:54:32,062 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:54:32,162 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Controller\\Index.py', reloading
+2024-04-15 22:54:32,751 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:54:33,480 - __main__ - INFO - Application started
+2024-04-15 22:54:37,215 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:54:37,215 - __main__ - INFO - Application JSON request
+2024-04-15 22:54:37,215 - __main__ - INFO - URL process started
+2024-04-15 22:54:37,230 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:54:39,254 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:54:39,254 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:39] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:54:41,291 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:54:41,292 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:41] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:54:41,294 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:54:41,296 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:41] "POST / HTTP/1.1" 200 -
+2024-04-15 22:54:43,581 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:54:43,582 - __main__ - INFO - Application JSON request
+2024-04-15 22:54:43,582 - __main__ - INFO - URL process started
+2024-04-15 22:54:43,583 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:54:45,626 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:54:45,627 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:45] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:54:47,670 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:54:47,672 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:47] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:54:47,674 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:54:47,675 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:47] "POST / HTTP/1.1" 200 -
+2024-04-15 22:54:57,930 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:54:57,932 - __main__ - INFO - Application JSON request
+2024-04-15 22:54:57,932 - __main__ - INFO - URL process started
+2024-04-15 22:54:57,933 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:54:59,974 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:54:59,975 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:54:59] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:55:02,012 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:55:02,012 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:55:02] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:55:02,012 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:55:02,012 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:55:02] "POST / HTTP/1.1" 200 -
+2024-04-15 22:56:52,515 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:56:52,515 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:56:52,515 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:56:52,690 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:56:53,452 - __main__ - INFO - Application started
+2024-04-15 22:56:56,343 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:56:56,344 - __main__ - INFO - Application JSON request
+2024-04-15 22:56:56,345 - __main__ - INFO - URL process started
+2024-04-15 22:56:56,347 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:56:58,372 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:56:58,373 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:56:58] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:57:00,415 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:57:00,416 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:00] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:57:00,418 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:57:00,419 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:00] "POST / HTTP/1.1" 200 -
+2024-04-15 22:57:02,496 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:57:02,496 - __main__ - INFO - Application JSON request
+2024-04-15 22:57:02,498 - __main__ - INFO - URL process started
+2024-04-15 22:57:02,499 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:57:04,545 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:57:04,546 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:04] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:57:06,594 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:57:06,595 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:06] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:57:06,597 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:57:06,597 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:06] "POST / HTTP/1.1" 200 -
+2024-04-15 22:57:06,614 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:06,615 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:06,615 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:06,616 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:06,786 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:57:07,503 - __main__ - INFO - Application started
+2024-04-15 22:57:24,446 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:24,448 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:24,448 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:24,449 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:24,802 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:57:25,571 - __main__ - INFO - Application started
+2024-04-15 22:57:31,403 - __main__ - INFO - Application started
+2024-04-15 22:57:31,450 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.12:5000
+2024-04-15 22:57:31,450 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 22:57:31,465 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:57:32,140 - __main__ - INFO - Application started
+2024-04-15 22:57:34,775 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:57:34,776 - __main__ - INFO - Application JSON request
+2024-04-15 22:57:34,777 - __main__ - INFO - URL process started
+2024-04-15 22:57:34,780 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:57:36,843 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:57:36,844 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:36] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:57:38,892 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:57:38,893 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:38] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:57:38,895 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:57:38,897 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:38] "POST / HTTP/1.1" 200 -
+2024-04-15 22:57:40,777 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:57:40,778 - __main__ - INFO - Application JSON request
+2024-04-15 22:57:40,778 - __main__ - INFO - URL process started
+2024-04-15 22:57:40,779 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:57:42,808 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:57:42,808 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:42] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:57:44,846 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:57:44,847 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:44] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:57:44,848 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:57:44,849 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:57:44] "POST / HTTP/1.1" 200 -
+2024-04-15 22:57:50,142 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:50,144 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:50,144 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:57:50,510 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:57:51,314 - __main__ - INFO - Application started
+2024-04-15 22:58:29,623 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:58:29,623 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:58:29,623 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:58:29,623 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\app.py', reloading
+2024-04-15 22:58:29,907 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:58:30,711 - __main__ - INFO - Application started
+2024-04-15 22:59:32,471 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:59:32,471 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:59:32,471 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 22:59:33,484 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 22:59:34,195 - __main__ - INFO - Application started
+2024-04-15 22:59:36,185 - __main__ - INFO - Request started for url http://localhost:5000/
+2024-04-15 22:59:36,185 - __main__ - INFO - Application JSON request
+2024-04-15 22:59:36,186 - __main__ - INFO - URL process started
+2024-04-15 22:59:36,189 - __main__ - INFO - Called function getIndex from class Index
+2024-04-15 22:59:38,235 - __main__ - INFO - Request started for url http://localhost:5000/_status
+2024-04-15 22:59:38,236 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:59:38] "[32mGET /_status HTTP/1.1[0m" 308 -
+2024-04-15 22:59:40,271 - __main__ - INFO - Request started for url http://localhost:5000/_status/
+2024-04-15 22:59:40,272 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:59:40] "GET /_status/ HTTP/1.1" 200 -
+2024-04-15 22:59:40,274 - __main__ - INFO - Called function apiIndex from class Index
+2024-04-15 22:59:40,274 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2024 22:59:40] "POST / HTTP/1.1" 200 -
+2024-04-15 23:00:24,492 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:24,492 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:24,492 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:24,811 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 23:00:25,633 - __main__ - INFO - Application started
+2024-04-15 23:00:36,303 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:36,303 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:36,303 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:36,912 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 23:00:37,655 - __main__ - INFO - Application started
+2024-04-15 23:00:44,230 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:44,232 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:44,233 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:44,233 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:00:44,891 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 23:00:45,609 - __main__ - INFO - Application started
+2024-04-15 23:03:45,863 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:03:45,866 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:03:45,867 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:03:46,130 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 23:03:46,860 - __main__ - INFO - Application started
+2024-04-15 23:08:44,056 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:08:44,059 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:08:44,059 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:08:45,183 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 23:13:19,461 - __main__ - INFO - Application started
+2024-04-15 23:13:19,524 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-15 23:13:19,524 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-15 23:13:19,524 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 23:13:20,214 - __main__ - INFO - Application started
+2024-04-15 23:13:53,967 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:13:53,967 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:13:53,967 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Python\\Api\\Core\\Controller.py', reloading
+2024-04-15 23:13:54,601 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-04-15 23:13:55,328 - __main__ - INFO - Application started
