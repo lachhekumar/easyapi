@@ -3,7 +3,6 @@ class Index:
     
     name: str = "Testing"
     def getIndex(**kwargs) -> dict:
-        Controller.call('_status')
         return {"file": "index 1222", 'form': kwargs['formData']}
 
     #defaultly called this if controller is assigned

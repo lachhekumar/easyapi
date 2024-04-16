@@ -15,7 +15,8 @@ from flask import request
 #creating config object
 config = Config()
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path = '', static_folder='Public/',
+            template_folder='Public/')
 
 #adding logs method to the system
 logFormat = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -116,4 +117,4 @@ def before_request():
 
 
 # Run application from in realoader mode
-app.run(passthrough_errors=True,use_reloader=True, threaded=True)
+app.run(passthrough_errors=True,use_reloader=True, threaded=True,debug=True )

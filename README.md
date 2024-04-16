@@ -24,7 +24,7 @@ File: Config/route.json
             {"type":"update","p":""},
             {"type":"delete","p":""},
             {"type":"class","p":""}
-    ],"method":"GET", "gaurd": true, "validate":"input.json"}
+    ],"method":"GET", "gaurd": true, "validate":"input.json", "type":"html","template": "index.html"}
 ```
 
 
@@ -45,6 +45,8 @@ File: Config/route.json
         - update - Update into table
         - delete - Delete from table
         - class - Call controller function
+- **type** set return type default  is json
+- **template** Template to be rendered at display
 
 
 > Every controller function will get 3 input parameter **input**, **processed** , **formData**
