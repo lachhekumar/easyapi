@@ -1,19 +1,26 @@
 import logging.handlers
-from flask import Flask
+from flask import Flask, g
 from flask import jsonify
 from Core.Config import Config
 from Core.Controller import Controller
 from Core.SQL import SQL
+from Core.Weaviate import Weaviate
 from flask_session import Session
 from flask_cors import CORS
 from Core.Validation import Validation
 import os
 import base64, random, datetime, logging, hashlib
+from pathlib import Path
 from flask import request
+from dotenv import load_dotenv
+from flask import session
 
 
 #creating config object
+dotenv_path = Path('Config/.env')
+load_dotenv(dotenv_path=dotenv_path)
 config = Config()
+
 
 app = Flask(__name__, static_url_path = '', static_folder='Public/',
             template_folder='Public/')
@@ -27,6 +34,7 @@ logging.basicConfig(filename='Logs/error.log', encoding='utf-8',level=logging.ER
 logging.basicConfig(filename='Logs/warning.log', encoding='utf-8',level=logging.WARNING, format=logFormat)
 logger = logging.getLogger(__name__)
 logger.info("Application started")
+
 
 #getting application display route from json file
 applicationRoute: dict = config.getRoute()
@@ -63,8 +71,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = db['type']+'://'+ db['username']+ ':'+ d
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # connecting to db
-db = SQL.connect(app, tableData)
-Controller.createRoute(app,applicationRoute, sqlData, db, logger)
+SQL.connect(app,tableData)
+Controller.createRoute(app,applicationRoute, sqlData, logger)
+
 
 #upload default function
 parameter: dict = {'log': logger}
@@ -81,12 +90,45 @@ def page_not_found(error):
     return 'This page does not exist', 404
 
 
+
+@app.after_request
+def after_request(response):
+    if g is not None and g.module is not None:
+        for _class in g.module:
+            if hasattr(g.module[_class],'_close'):
+                g.module[_class]._close()
+
+    return response
+
+
 @app.before_request
 def before_request():
-
+    # g variable take the global variable for request
     logger.info('Request started for url ' + request.url)   
 
-    
+    #getting information
+    setattr(g,'module',{})
+    setattr(g,'files',{})
+    setattr(g,'form',{})
+    setattr(g,'get',{})
+
+    g.files = Controller.getUploadFiles()    
+    g.form = Controller.getFormData().update(g.files)
+    g.get = Controller.getGetData()
+
+
+    # load required module    
+    if request.url_rule.defaults is not None:
+        _compontent = request.url_rule.defaults['component'].split(',')
+        if _compontent is not None:
+            for compontent in _compontent:
+                if compontent is not None:
+                    dclass = __import__('Core.'+ compontent,globals(), locals(),fromlist=[compontent])                    
+                    _class = getattr(dclass, compontent)()
+                    g.module[compontent] = _class
+                    
+
+
     if(str(request.content_type) == 'application/json' and request.path != '/_status/' and request.path != '/_status' and request.path != '/_replace/'):
         headers = dict(request.headers)
         logger.info('Application JSON request')
@@ -108,10 +150,6 @@ def before_request():
         else:
             logger.info('Token Did not Match')
             return {'error': {'message': 'Invalid token'}}
-
-
-
-        
 
 
 

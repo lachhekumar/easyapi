@@ -118,6 +118,14 @@ class SQL:
 
                 sqlQuery = sqlQuery.filter(text(sqlescape(table)+'.'+ pkField + "=" + sep + sqlescape(input.get('id')) + sep))
 
+            if request.args.get("sort") is not None:
+                sort = request.args.get("sort").split(',')                
+                if sort[1] == 'desc':
+                    sqlQuery= sqlQuery.order_by(getattr(SQL.dynamicClass[table],sort[0]).desc())
+                else:
+                    sqlQuery= sqlQuery.order_by(getattr(SQL.dynamicClass[table],sort[0]))
+          
+
             #return raw Query
             if rawQuery == True:
                 return sqlQuery

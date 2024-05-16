@@ -1,6 +1,7 @@
-from flask import jsonify
+from flask import jsonify, g
 from flask import request
 from flask import Response
+from flask import g
 from flask import render_template
 from Core.Config import Config
 from sqlalchemy.exc import SQLAlchemyError
@@ -11,7 +12,6 @@ from guard import protectRequest
 import importlib
 import os
 import yaml
-import sqlalchemy
 import json
 import uuid
 import hashlib
@@ -19,23 +19,29 @@ import datetime
 import base64, random
 import requests
 
+
+
 class Controller:
 
+    def __init__(self) -> None:
+        pass
 
-    def createRoute(app, routes, sqlData, db, logger):
+
+    def createRoute(app, routes, sqlData,  logger):
         for route in routes:
             if route.get('method')  is None:
                 route['method'] = 'GET'
 
             app.add_url_rule(route['path'],methods = [route['method']],view_func=Controller.processUrl,defaults = {
-                '_info': route, 'db': db,'log': logger, 'path': route['path'], 'type': route['type'] if 'type' in route else 'json'
-                , 'template': route['tempalte'] if 'tempalte' in route else 'template.html'
+                '_info': route, 'log': logger, 'path': route['path'], 'type': route['type'] if 'type' in route else 'json'
+                , 'template': route['template'] if 'template' in route else 'template.html', 
+                'component': route['component'] if 'component' in route else ''
             })
 
         # add default view for sql service
         allowedMethod: list =['GET','POST','PUT','DELETE']
         for sql in sqlData:
-            parameter: dict = {'_info': sql,'db': db,'log': logger}
+            parameter: dict = {'_info': sql,'log': logger, 'component': 'SQL'}
             app.add_url_rule('/_view/' + sql,methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)
             app.add_url_rule('/_view/' + sql +'/<id>',methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)   
             app.add_url_rule('/_view/' + sql +'/<id>/<action>',methods = allowedMethod,view_func=Controller.processSQL,defaults = parameter)
@@ -70,6 +76,13 @@ class Controller:
             }).json()
 
         return res
+    
+
+    def getUploadFiles() -> List:
+        if 'file' not in request.files:
+            print("asdas")
+
+        return []
 
 
     # get form data into the system
@@ -104,13 +117,8 @@ class Controller:
         currentDate: str = datetime.datetime.now().strftime('%Y%m%d')
         code: str = hashlib.md5((request.remote_addr +'/' + request.user_agent.string+ '/' + currentDate).encode('utf-8')).hexdigest() + '/' + str(uuid.uuid4())
         token:str = base64.b64encode(code.encode()).decode('utf-8')
-
         data: dict = {
-            'remote_addr': request.remote_addr,
             'url':  request.path,
-            'host': request.host,
-            'user-agent': request.user_agent.string,
-            'headers': dict(request.headers),
             'access_token': request.remote_addr.replace('.','') + datetime.datetime.now().strftime('%d%y%m') + '/' + token + '/' + str(random.random())
         }
 
@@ -218,7 +226,7 @@ class Controller:
                 if 'formData' in gotData and gotData['formData'] is not None:
                     sendData['formData'] = gotData['formData']
         sendToBrowser: str = ''
-        if kwargs['type'].lower() == 'html':
+        if kwargs['type'].lower() == 'html':            
             sendToBrowser = render_template(kwargs['template'] if kwargs['template'] is not None else 'template.html',data=sendData)
         else: 
             sendToBrowser = jsonify(gotData)
@@ -268,7 +276,7 @@ class Controller:
     # --------------------------- processSQL ---------------------------- #
     # process SQL Data
     # --------------------------- processSQL ---------------------------- #
-    def processSQL(_info,db, **kwargs) -> str:
+    def processSQL(_info, **kwargs) -> str:
         directory = os.getcwd() + '/SQL/'
         output: dict = {}
         error: bool = False

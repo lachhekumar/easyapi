@@ -24,7 +24,7 @@ File: Config/route.json
             {"type":"update","p":""},
             {"type":"delete","p":""},
             {"type":"class","p":""}
-    ],"method":"GET", "gaurd": true, "validate":"input.json", "type":"html","template": "index.html"}
+    ],"method":"GET", "gaurd": true, "validate":"input.json", "type":"html","template": "index.html","component": "SQL"}
 ```
 
 
@@ -37,6 +37,7 @@ File: Config/route.json
 - **validate** - Request by Querystring/Post as per the validation configured
 - **method** - Allowed method it can be POST, GET, PUT, DELETE
 - **path** - URL  that need to be processed
+- **component** - Any component to be loaded during request
 - **steps** - What action to performed when a url is callled
     - Steps Type
         - sql - Execute given query from a file
@@ -53,6 +54,9 @@ File: Config/route.json
 - **input** - Input given by client, eg: /client/1 in this url user will get {id: 1} in input
 - **processed** - If you are calling multiple step in url, previous function returned option will clubbed and sent in this option
 - **formData** - Got input from form. if json request sent then ['data'] object will be considered
+
+> component can have a function **_close** which will be called after page execution
+
 
 ## Table Declaration
 SQL/Table/<tablename>.json
